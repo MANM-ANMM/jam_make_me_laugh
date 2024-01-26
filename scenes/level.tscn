@@ -1,7 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhtenqjiedfo3"]
+[gd_scene load_steps=5 format=3 uid="uid://dhtenqjiedfo3"]
 
 [ext_resource type="PackedScene" uid="uid://ge6iuqdhaydc" path="res://scenes/player.tscn" id="1_0t2k1"]
+[ext_resource type="PackedScene" uid="uid://dw2ff30pbqo78" path="res://scenes/pnj.tscn" id="2_ppqx5"]
+[ext_resource type="PackedScene" uid="uid://btl8v25qmm374" path="res://scenes/batiment.tscn" id="3_wl3fn"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_beeal"]
+vertices = PackedVector2Array(1101, 173, 881, 173, 879, 170, 1193, -36, 881, 293, 1101, 293, 484, 460, 484, 340, 1191, 692, 653, 62, 781, 240, 334, 167, 334, 47, -100, 692, 264, 460, 264, 340, -74, -45, 114, 167, 114, 47, 751, -8)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(3, 8, 5, 0), PackedInt32Array(9, 10, 7, 11, 12), PackedInt32Array(5, 8, 13, 6), PackedInt32Array(14, 6, 13), PackedInt32Array(15, 14, 13, 16, 17), PackedInt32Array(10, 2, 1, 4), PackedInt32Array(10, 4, 7), PackedInt32Array(11, 7, 15, 17), PackedInt32Array(18, 17, 16), PackedInt32Array(3, 2, 19), PackedInt32Array(16, 3, 19), PackedInt32Array(18, 16, 19, 12), PackedInt32Array(12, 19, 9)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-84, -56, 1204, -46, 1201, 702, -110, 702)])
+source_geometry_group_name = &"navigation_polygon_source_group"
 
 [node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_0t2k1")]
+
+[node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
+position = Vector2(881, 65)
+motion_mode = 1
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_beeal")
+
+[node name="Batiment" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+position = Vector2(224, 107)
+
+[node name="Batiment3" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+position = Vector2(991, 233)
+
+[node name="Batiment2" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+position = Vector2(374, 400)
+
+[node name="Batiment4" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+position = Vector2(766, 116)
+rotation = -2.1893
