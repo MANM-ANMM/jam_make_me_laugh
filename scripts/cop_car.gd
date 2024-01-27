@@ -55,7 +55,7 @@ func _on_velocity_computed(safe_velocity: Vector2):
 
 func _on_navigation_agent_2d_set_up_terminated():
 	navigation_agent.velocity_computed.connect(_on_velocity_computed)
-	set_movement_target(Vector2(100,800))
+	set_movement_target(global_position)
 
 
 func _on_detection_fou_body_entered(body):
@@ -67,5 +67,5 @@ func _on_timer_actualise_traque_timeout():
 	set_movement_target(fou.global_position)
 
 
-func _on_detection_perte_fou_body_entered(body):
+func _on_detection_perte_fou_body_entered(_body):
 	state = State.Normal

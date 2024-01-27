@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://1o547wqr41xw"]
+[gd_scene load_steps=11 format=3 uid="uid://1o547wqr41xw"]
 
 [ext_resource type="Script" path="res://scripts/cop_car.gd" id="1_5d7p2"]
-[ext_resource type="PackedScene" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
-[ext_resource type="Texture2D" uid="uid://g7oyjbhpgwfl" path="res://assets/sprites/car/car.png" id="2_geuxy"]
+[ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
+[ext_resource type="Texture2D" uid="uid://btfewectddc6e" path="res://assets/sprites/car/car.png" id="2_geuxy"]
 [ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="3_yu5hw"]
-[ext_resource type="PackedScene" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
+[ext_resource type="PackedScene" uid="uid://dsw1fqwwmb28v" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
+[ext_resource type="Texture2D" uid="uid://cvlnuhx4bvvt7" path="res://assets/sprites/60°_light_cone.png" id="6_l7eap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0d51"]
 size = Vector2(77, 31)
@@ -23,6 +24,7 @@ collision_layer = 9
 script = ExtResource("1_5d7p2")
 
 [node name="FlashingLight" parent="." instance=ExtResource("1_v8n2l")]
+position = Vector2(3, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1.63)
@@ -30,6 +32,7 @@ scale = Vector2(0.16, 0.16)
 texture = ExtResource("2_geuxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_g0d51")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
@@ -41,6 +44,7 @@ time_horizon_obstacles = 0.2
 script = ExtResource("3_yu5hw")
 
 [node name="DetectionFou" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 2
 
@@ -48,6 +52,7 @@ collision_mask = 2
 shape = SubResource("CircleShape2D_6g4tq")
 
 [node name="DetectionPerteFou" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 2
 
@@ -57,9 +62,26 @@ shape = SubResource("CircleShape2D_p7f7c")
 [node name="TimerActualiseTraque" type="Timer" parent="."]
 
 [node name="EmprisonneurClown" parent="." instance=ExtResource("5_bgkr5")]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EmprisonneurClown"]
 shape = SubResource("RectangleShape2D_o00ch")
+
+[node name="Phare G" type="PointLight2D" parent="."]
+position = Vector2(194, -10)
+rotation = 2.35619
+color = Color(0.921569, 0.921569, 0.580392, 1)
+energy = 0.5
+shadow_enabled = true
+texture = ExtResource("6_l7eap")
+
+[node name="Phare D" type="PointLight2D" parent="."]
+position = Vector2(192, 15)
+rotation = 2.35619
+color = Color(0.921569, 0.921569, 0.580392, 1)
+energy = 0.5
+shadow_enabled = true
+texture = ExtResource("6_l7eap")
 
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
 [connection signal="body_entered" from="DetectionFou" to="." method="_on_detection_fou_body_entered"]

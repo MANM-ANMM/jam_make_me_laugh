@@ -1,3 +1,61 @@
-[gd_scene format=3 uid="uid://cv7nmswd6uikx"]
+[gd_scene load_steps=9 format=3 uid="uid://cv7nmswd6uikx"]
 
-[node name="Policier" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bahedaauan4xo" path="res://assets/sprites/civilians/civilian1.png" id="1_cb2oe"]
+[ext_resource type="Script" path="res://scripts/cop_car.gd" id="1_fnvmn"]
+[ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="2_n26lp"]
+[ext_resource type="PackedScene" uid="uid://dsw1fqwwmb28v" path="res://scenes/emprisonneur_clown.tscn" id="4_f36cq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n8t0n"]
+radius = 20.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6hc55"]
+radius = 106.231
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6oquu"]
+radius = 262.069
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u5le8"]
+radius = 25.02
+
+[node name="Policier" type="CharacterBody2D"]
+script = ExtResource("1_fnvmn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n8t0n")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true
+radius = 22.0
+time_horizon_obstacles = 0.2
+avoidance_priority = 0.9
+script = ExtResource("2_n26lp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.085, 0.085)
+texture = ExtResource("1_cb2oe")
+
+[node name="DetectionFou" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionFou"]
+shape = SubResource("CircleShape2D_6hc55")
+
+[node name="DetectionPerteFou" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionPerteFou"]
+shape = SubResource("CircleShape2D_6oquu")
+
+[node name="TimerActualiseTraque" type="Timer" parent="."]
+
+[node name="EmprisonneurClown" parent="." instance=ExtResource("4_f36cq")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EmprisonneurClown"]
+shape = SubResource("CircleShape2D_u5le8")
+
+[connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
+[connection signal="body_entered" from="DetectionFou" to="." method="_on_detection_fou_body_entered"]
+[connection signal="body_entered" from="DetectionPerteFou" to="." method="_on_detection_perte_fou_body_entered"]
+[connection signal="timeout" from="TimerActualiseTraque" to="." method="_on_timer_actualise_traque_timeout"]

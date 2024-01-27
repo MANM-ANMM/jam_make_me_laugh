@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhtenqjiedfo3"]
+[gd_scene load_steps=10 format=3 uid="uid://dhtenqjiedfo3"]
 
 [ext_resource type="PackedScene" uid="uid://ge6iuqdhaydc" path="res://scenes/player.tscn" id="1_0t2k1"]
 [ext_resource type="Texture2D" uid="uid://bfaidxyd1xo7v" path="res://icon.svg" id="1_bqshm"]
@@ -7,6 +7,7 @@
 [ext_resource type="NavigationPolygon" uid="uid://5qum1p8j44ww" path="res://navpolygon/pnj_polygons.tres" id="4_avuho"]
 [ext_resource type="PackedScene" uid="uid://dq4qagax7essg" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
 [ext_resource type="PackedScene" uid="uid://1o547wqr41xw" path="res://scenes/cop_car.tscn" id="7_rir1b"]
+[ext_resource type="PackedScene" uid="uid://cy6xv7dntq10w" path="res://scenes/commisariat.tscn" id="8_uc22s"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_styr4"]
 vertices = PackedVector2Array(558, 528, 1185, 656, -84, 663, 190, 528, 408, 16, 590, 16, 556, 40, 768, 341, 807, 313, 807, 361, 915, 105, 852, 16, 1198, 16, 1175, 105, 1175, 361, 558, 272, 408, 235, 190, 272, 40, 235, -59, 16, 40, 16)
@@ -31,7 +32,6 @@ zoom = Vector2(1.725, 1.725)
 [node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
 position = Vector2(881, 65)
 motion_mode = 1
-movement_speed = null
 
 [node name="NavigationRegion2D2" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_styr4")
@@ -63,3 +63,6 @@ editor_only = true
 
 [node name="VoiturePolice" parent="." instance=ExtResource("7_rir1b")]
 position = Vector2(464, 16)
+
+[node name="Commisariat" parent="." instance=ExtResource("8_uc22s")]
+position = Vector2(1176, 649)

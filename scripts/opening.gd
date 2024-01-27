@@ -10,7 +10,7 @@ func _physics_process(_delta):
 		_on_close_button_button_down()
 
 func _on_start_button_button_down():
-	if get_tree().change_scene_to_file("res://scenes/level.tscn") != OK:
+	if get_tree().change_scene_to_file("res://scenes/main.tscn") != OK:
 		print ("Error passing from Opening scene to main scene")
 
 func _on_close_button_button_down():
