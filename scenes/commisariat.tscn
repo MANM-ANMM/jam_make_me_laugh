@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy6xv7dntq10w"]
+
+[ext_resource type="Script" path="res://scripts/commisariat.gd" id="1_773ny"]
+[ext_resource type="PackedScene" uid="uid://cv7nmswd6uikx" path="res://scenes/cop.tscn" id="2_vcbc4"]
+
+[node name="Commisariat" type="Marker2D"]
+script = ExtResource("1_773ny")
+policier_scene = ExtResource("2_vcbc4")

@@ -17,6 +17,9 @@ func _update_face(_delta):
 			$Profile.eye_shaking = 3
 		else:
 			$Profile.eye_shaking = 0
+			
+	if Input.is_action_just_pressed("ui_accept"):
+		$Profile.speak("oOoOoOoooOOOOoooooOOoOOOOoOOOoOOOOOoooooOOOOOoooooOOOoooOOoOOOOOOooOoOoO")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

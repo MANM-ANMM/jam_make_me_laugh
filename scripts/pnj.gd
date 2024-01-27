@@ -5,6 +5,7 @@ class_name PNJ
 @onready var navigation_agent: NavigationAgent2D = get_node("NavigationAgent2D")
 var target_entrance:Marker2D
 var fou:Player
+var commisariat: Marker2D
 
 enum State {
 	Normal,
@@ -28,15 +29,12 @@ func _physics_process(_delta):
 		State.Accoste:
 			pass
 		State.Fly:
-			move_fly()
-
-func move_fly():
-	var dir := (global_position - fou.global_position).normalized()
-	velocity = dir * movement_speed
-	move_and_slide()
+			move_normal()
 
 func move_normal():
 	if navigation_agent.is_navigation_finished():
+		if state == State.Fly:
+			commisariat.report_aggression()
 		queue_free()
 		return
 	
@@ -53,7 +51,7 @@ func interact(player:Player):
 		State.Normal:
 			accoster(player)
 		State.Accoste:
-			state = State.Fly
+			fuire()
 		State.Fly:
 			tuer()
 
@@ -68,6 +66,12 @@ func accoster(player:Player):
 func tuer():
 	queue_free()
 
+func fuire():
+	state = State.Fly
+	navigation_agent.velocity_computed.connect(_on_velocity_computed)
+	set_movement_target(commisariat.global_position)
+	navigation_agent.avoidance_mask += 4
+	navigation_agent.avoidance_priority = 1.0
 
 func _on_velocity_computed(safe_velocity: Vector2):
 	velocity = safe_velocity
