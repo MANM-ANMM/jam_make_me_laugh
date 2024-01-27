@@ -5,7 +5,7 @@ const SPEED = 100.0
 
 @onready var area_detection_pnj := $DetectPNJ
 
-func _process(delta):
+func _process(_delta):
 	rotation = velocity.angle()
 
 func _physics_process(_delta):

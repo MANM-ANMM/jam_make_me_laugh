@@ -9,7 +9,7 @@ func _ready():
 	BusEvent.dialog.connect(_on_dialog)
 	BusEvent.end_dialog.connect(_on_end_dialog)
 
-func _on_dialog(profile, joke):
+func _on_dialog(_profile, _joke):
 	$Level/Player/Camera2D.enabled = false
 	$Level.get_tree().paused = true
 	instance = scene.instantiate()

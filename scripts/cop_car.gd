@@ -67,5 +67,5 @@ func _on_timer_actualise_traque_timeout():
 	set_movement_target(fou.global_position)
 
 
-func _on_detection_perte_fou_body_entered(body):
+func _on_detection_perte_fou_body_entered(_body):
 	state = State.Normal

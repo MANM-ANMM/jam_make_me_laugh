@@ -15,7 +15,7 @@ enum State {
 var state : State = State.Normal
 
 
-func _process(delta):
+func _process(_delta):
 	rotation = velocity.angle()
 
 func set_movement_target(movement_target: Vector2):
@@ -60,7 +60,7 @@ func interact(player:Player):
 func accoster(player:Player):
 	navigation_agent.velocity_computed.disconnect(_on_velocity_computed)
 	velocity = Vector2.ZERO
-	state = State.Accoste
+	state = State.Fly
 	fou = player
 	BusEvent.dialog.emit($Joke.profile, $Joke.joke)
 

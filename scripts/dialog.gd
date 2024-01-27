@@ -5,7 +5,7 @@ var skippable = false
 func _ready():
 	pass # Replace with function body.
 
-func _update_face(delta):
+func _update_face(_delta):
 	if Input.is_action_just_pressed("move_left"):
 		$Profile.look_toward(Profil.EYE_POS.Left)
 	if Input.is_action_just_pressed("move_right"):
