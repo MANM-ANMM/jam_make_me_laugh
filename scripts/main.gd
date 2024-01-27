@@ -22,3 +22,5 @@ func _on_end_dialog():
 	$Level/Player/Camera2D.enabled = true
 	$Level.get_tree().paused = false
 	$Level.visible = true
+	$Level/Player.set_physics_process(false)
+	get_tree().create_timer(0.5).timeout.connect(func():$Level/Player.set_physics_process(true))

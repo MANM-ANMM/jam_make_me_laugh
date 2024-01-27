@@ -12,10 +12,15 @@ enum State {
 }
 
 var state : State = State.Normal
+@onready var animated_sprite := $AnimatedSprite2D
 
+func _ready():
+	animated_sprite.play()
+	animated_sprite.speed_scale = 0.0
 
 func _process(_delta):
-	rotation = velocity.angle()
+	if velocity != Vector2.ZERO:
+		rotation = velocity.angle()
 
 func set_movement_target(movement_target: Vector2):
 	navigation_agent.set_target_position(movement_target)
@@ -60,6 +65,7 @@ func fuire():
 
 func _on_velocity_computed(safe_velocity: Vector2):
 	velocity = safe_velocity
+	animated_sprite.speed_scale = safe_velocity.length()/movement_speed
 	move_and_slide()
 
 func _on_navigation_agent_2d_set_up_terminated():
