@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://beunufxd5e0xq"]
+
+[ext_resource type="Texture2D" uid="uid://dwhirx2uevdmp" path="res://assets/sprites/scenery/street_light.png" id="1_4dlgu"]
+[ext_resource type="Texture2D" uid="uid://b6akvdaf721cl" path="res://assets/sprites/player_light.png" id="2_d3hhg"]
+
+[node name="Street light" type="Node2D"]
+scale = Vector2(0.2, 0.2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+texture = ExtResource("1_4dlgu")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(1, 0.72549, 0.278431, 1)
+energy = 0.3
+shadow_enabled = true
+texture = ExtResource("2_d3hhg")
