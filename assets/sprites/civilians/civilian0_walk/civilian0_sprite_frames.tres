@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=25 format=3 uid="uid://bpwfqdhxgpvhx"]
+[gd_resource type="SpriteFrames" load_steps=49 format=3 uid="uid://bpwfqdhxgpvhx"]
 
 [ext_resource type="Texture2D" uid="uid://c5u40aantkcj1" path="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0000.png" id="1_0hflw"]
 [ext_resource type="Texture2D" uid="uid://eq0fs2f1v6te" path="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0001.png" id="2_hc78s"]
@@ -24,6 +24,30 @@
 [ext_resource type="Texture2D" uid="uid://b6ba7mq1vcury" path="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0021.png" id="22_dn6lm"]
 [ext_resource type="Texture2D" uid="uid://tjd51n50u5t" path="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0022.png" id="23_x62xh"]
 [ext_resource type="Texture2D" uid="uid://pg72dt0m7t45" path="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0023.png" id="24_bejd0"]
+[ext_resource type="Texture2D" uid="uid://7xo505h5dmuy" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0000.png" id="25_26756"]
+[ext_resource type="Texture2D" uid="uid://rkt6clqo35s2" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0001.png" id="26_33gp3"]
+[ext_resource type="Texture2D" uid="uid://b38mqlo48uw4x" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0002.png" id="27_al4hm"]
+[ext_resource type="Texture2D" uid="uid://v48vec3238xo" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0003.png" id="28_leupe"]
+[ext_resource type="Texture2D" uid="uid://c2qaewvcrhydh" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0004.png" id="29_jeq65"]
+[ext_resource type="Texture2D" uid="uid://cppvvelmd7gon" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0005.png" id="30_slbkw"]
+[ext_resource type="Texture2D" uid="uid://cvp6qdfsmwhjn" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0006.png" id="31_ph6sq"]
+[ext_resource type="Texture2D" uid="uid://cube5g5ryohi7" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0007.png" id="32_mjmdt"]
+[ext_resource type="Texture2D" uid="uid://drbc0s3ewdkpn" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0008.png" id="33_dcher"]
+[ext_resource type="Texture2D" uid="uid://jpdkm61lt5iu" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0009.png" id="34_or1d1"]
+[ext_resource type="Texture2D" uid="uid://drd7basd1lxi3" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0010.png" id="35_oefll"]
+[ext_resource type="Texture2D" uid="uid://x877rtq5svib" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0011.png" id="36_ug6d3"]
+[ext_resource type="Texture2D" uid="uid://cl07x62pbf3x" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0012.png" id="37_w5780"]
+[ext_resource type="Texture2D" uid="uid://binwf4jd363i7" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0013.png" id="38_bdq26"]
+[ext_resource type="Texture2D" uid="uid://ci0ed3dht6xp0" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0014.png" id="39_bjoye"]
+[ext_resource type="Texture2D" uid="uid://ds2qf3ajp6cdx" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0015.png" id="40_gtixm"]
+[ext_resource type="Texture2D" uid="uid://c3rjetkyus2av" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0016.png" id="41_dapcb"]
+[ext_resource type="Texture2D" uid="uid://dgjqi883qgdr6" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0017.png" id="42_xnrp7"]
+[ext_resource type="Texture2D" uid="uid://oj5mhwxxhl7c" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0018.png" id="43_f1xiy"]
+[ext_resource type="Texture2D" uid="uid://c28rm0dosboe8" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0019.png" id="44_apmo3"]
+[ext_resource type="Texture2D" uid="uid://ccanpgfjbuics" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0020.png" id="45_4efn1"]
+[ext_resource type="Texture2D" uid="uid://cu7u73c2d1fmd" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0021.png" id="46_iho8c"]
+[ext_resource type="Texture2D" uid="uid://dtvno2s4fr8r4" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0022.png" id="47_48xbm"]
+[ext_resource type="Texture2D" uid="uid://cg3bp2nley7mk" path="res://assets/sprites/civilians/civilian1_walk/civilian1_walk_0023.png" id="48_th8v1"]
 
 [resource]
 animations = [{
@@ -102,5 +126,82 @@ animations = [{
 }],
 "loop": true,
 "name": &"Walk0",
+"speed": 48.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_26756")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_33gp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_al4hm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_leupe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_jeq65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_slbkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ph6sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_mjmdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dcher")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_or1d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_oefll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ug6d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_w5780")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_bdq26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_bjoye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gtixm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_dapcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_xnrp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_f1xiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_apmo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_4efn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_iho8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_48xbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_th8v1")
+}],
+"loop": true,
+"name": &"WalkLilianne",
 "speed": 48.0
 }]

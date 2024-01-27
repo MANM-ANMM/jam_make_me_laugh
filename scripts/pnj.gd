@@ -15,7 +15,11 @@ var state : State = State.Normal
 @onready var animated_sprite := $AnimatedSprite2D
 
 func _ready():
-	animated_sprite.play()
+	match $Joke.profile:
+		'Lilian':
+			animated_sprite.play('WalkLilianne')
+		_:
+			animated_sprite.play('Walk0')
 	animated_sprite.speed_scale = 0.0
 
 func _process(_delta):
