@@ -14,9 +14,12 @@ var state : State = State.Normal :
 		if value == state: return
 		
 		state = value
-		if state == State.Traque:
-			set_movement_target(fou.global_position)
-			$TimerActualiseTraque.start()
+		match state:
+			State.Traque:
+				set_movement_target(fou.global_position)
+				$TimerActualiseTraque.start()
+			State.Normal:
+				$TimerActualiseTraque.stop()
 
 func _process(delta):
 	rotate(angle_difference(rotation, velocity.angle())*delta*20.0)
@@ -33,8 +36,7 @@ func _physics_process(_delta):
 
 func move_normal():
 	if navigation_agent.is_navigation_finished():
-		if state == State.Traque:
-			set_movement_target(fou.global_position)
+		set_movement_target(Vector2(randf_range(0, 1000.0), randf_range(0, 600.0)))
 		return
 	
 	
@@ -62,3 +64,7 @@ func _on_detection_fou_body_entered(body):
 
 func _on_timer_actualise_traque_timeout():
 	set_movement_target(fou.global_position)
+
+
+func _on_detection_perte_fou_body_entered(body):
+	state = State.Normal

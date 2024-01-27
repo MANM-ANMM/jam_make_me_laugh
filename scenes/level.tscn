@@ -9,11 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://1o547wqr41xw" path="res://scenes/cop_car.tscn" id="7_rir1b"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_styr4"]
-vertices = PackedVector2Array(763, 369, 787, 351, 787, 381, 578, 548, 1171, 381, 1165, 636, 20, 255, 170, 255, 170, 548, -63, 643, 578, 252, 428, 252, 428, 36, 528, 36, -40, 36, 20, 36, 1177, 85, 926, 85, 891, 36, 1178, 36)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(2, 4, 5, 3), PackedInt32Array(6, 7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(10, 13, 0), PackedInt32Array(3, 10, 0), PackedInt32Array(14, 15, 6, 9), PackedInt32Array(5, 9, 8, 3), PackedInt32Array(16, 17, 18, 19)])
+vertices = PackedVector2Array(558, 528, 1185, 656, -84, 663, 190, 528, 408, 16, 590, 16, 556, 40, 768, 341, 807, 313, 807, 361, 915, 105, 852, 16, 1198, 16, 1175, 105, 1175, 361, 558, 272, 408, 235, 190, 272, 40, 235, -59, 16, 40, 16)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6), PackedInt32Array(7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(13, 12, 1, 14), PackedInt32Array(14, 1, 0, 9), PackedInt32Array(9, 0, 15, 7), PackedInt32Array(6, 7, 15), PackedInt32Array(16, 4, 6, 15), PackedInt32Array(16, 15, 17, 18), PackedInt32Array(19, 20, 18, 2), PackedInt32Array(3, 2, 18, 17)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-136, -64, 1280, -64, 1264, 736, -168, 744)])
 source_geometry_group_name = &"navigation_polygon_source_group"
-agent_radius = 100.0
+agent_radius = 80.0
 
 [node name="Level" type="Node2D"]
 
