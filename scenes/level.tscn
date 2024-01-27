@@ -20,6 +20,7 @@ position = Vector2(237, 235)
 [node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
 position = Vector2(881, 65)
 motion_mode = 1
+movement_speed = null
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = ExtResource("4_avuho")
