@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c80h2x1et1hun"
-path="res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"
+uid="uid://b35q4n3gjgx0a"
+path="res://.godot/imported/profil1_mouth_s.png-d8d63872a61dc2d26007b2c808cc1957.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/profils/profil1_pupils.png"
-dest_files=["res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"]
+source_file="res://assets/sprites/profils/profil1_mouth_s.png"
+dest_files=["res://.godot/imported/profil1_mouth_s.png-d8d63872a61dc2d26007b2c808cc1957.ctex"]
 
 [params]
 

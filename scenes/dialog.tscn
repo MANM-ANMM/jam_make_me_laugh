@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://de4worxvj7s26"]
 
 [ext_resource type="Script" path="res://scripts/dialog.gd" id="1_s6hvb"]
-[ext_resource type="PackedScene" path="res://scenes/profile.tscn" id="2_1n2tf"]
+[ext_resource type="PackedScene" uid="uid://b8vf2456poo8w" path="res://scenes/profile.tscn" id="2_1n2tf"]
 
 [node name="dialog" type="Node2D"]
 position = Vector2(570, 308)
@@ -15,4 +15,5 @@ offset_left = -57.0
 offset_top = -239.0
 offset_right = 130.0
 offset_bottom = -162.0
-text = "try ZQSD !"
+text = "try ZQSD
+and space"

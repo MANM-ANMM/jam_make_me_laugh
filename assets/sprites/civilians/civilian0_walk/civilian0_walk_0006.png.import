@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c80h2x1et1hun"
-path="res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"
+uid="uid://cj0firtom0mah"
+path="res://.godot/imported/civilian0_walk_0006.png-252994a0d772064f2aef256db2781a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/profils/profil1_pupils.png"
-dest_files=["res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"]
+source_file="res://assets/sprites/civilians/civilian0_walk/civilian0_walk_0006.png"
+dest_files=["res://.godot/imported/civilian0_walk_0006.png-252994a0d772064f2aef256db2781a88.ctex"]
 
 [params]
 

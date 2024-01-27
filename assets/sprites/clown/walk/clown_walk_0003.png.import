@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c80h2x1et1hun"
-path="res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"
+uid="uid://beigsou6ij80n"
+path="res://.godot/imported/clown_walk_0003.png-6577174740a6ea2762233b3923a28ef3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/profils/profil1_pupils.png"
-dest_files=["res://.godot/imported/profil1_pupils.png-5d577a2849a5e61428c141c245cfcbe7.ctex"]
+source_file="res://assets/sprites/clown/walk/clown_walk_0003.png"
+dest_files=["res://.godot/imported/clown_walk_0003.png-6577174740a6ea2762233b3923a28ef3.ctex"]
 
 [params]
 
