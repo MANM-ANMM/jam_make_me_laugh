@@ -3,30 +3,33 @@ KEY_LANG,Language,Langue
 KEY_START,Start,Commencer
 KEY_RESTART,Restart,Recommencer
 KEY_CLOSE,Exit,Fermer
-GEEK_0,"An IPv4 address walks into the bar and yells, ""Bartender! Give me a CIDR, I'm exhausted!"" ",Quelle différence y a-t-il entre Windows et un clou ? Aucune : tous deux sont destinés à se planter.
-GEEK_1,"What's up with the jokes... Give it a REST, guy...","C'est un testeur qui rentre dans un bar, il commande une bière, 10 bières, -1 bière, 1.5 bières, il sort du bar, commande 1 bière, retourne dans le bar. Un client rentre dans le bar et demande où sont les toilettes, le bar prend feu. "
-GEEK_2,Doctor: What seems to be the problem? Router: It hurts when IP.,"J'ai une blague sur UDP, mais je suis pas sûr que tu la captes."
-GEEK_3,I'm going to keep telling you this TCP joke until you get it.,Où partent les geeks en vacances ? Au C-Shell.
+KEY_SKIP,Space to skip,Espace pour passer
+GEEK_0,"An IPv4 address walks into the bar and yells, ""Bartender! Give me a CIDR, I'm exhausted!"" ",Quelle diffÃ©rence y a-t-il entre Windows et un clou ? Aucune : tous deux sont destinÃ©s Ã  se planter.
+GEEK_1,"What's up with the jokes... Give it a REST, guy...","C'est un testeur qui rentre dans un bar, il commande une biÃ¨re, 10 biÃ¨res, -1 biÃ¨re, 1.5 biÃ¨res, il sort du bar, commande 1 biÃ¨re, retourne dans le bar. Un client rentre dans le bar et demande oÃ¹ sont les toilettes, le bar prend feu. "
+GEEK_2,Doctor: What seems to be the problem? Router: It hurts when IP.,"J'ai une blague sur UDP, mais je suis pas sÃ»r que tu la captes."
+GEEK_3,I'm going to keep telling you this TCP joke until you get it.,OÃ¹ partent les geeks en vacances ? Au C-Shell.
 GEEK_4,The problem with SSL jokes is that you must get someone else to vouch for you before you can tell the joke.,Pourquoi les Geek sont-ils fiers ? Parce qu'ils ont une Gygabyte.
-GEEK_5,"The SYN flood attack: ""knock knock. who's there? knock knock. who's there? knock knock. who's there? …","L'attaque SYN: ""toc toc. Qui est là? toc toc. Qui est là? toc toc. Qui est là? …"
+GEEK_5,"The SYN flood attack: ""knock knock. who's there? knock knock. who's there? knock knock. who's there? â€¦","L'attaque SYN: ""toc toc. Qui est lÃ ? toc toc. Qui est lÃ ? toc toc. Qui est lÃ ? â€¦"
 GEEK_6,404 joke not found.,404 blague introuvable.
-GEEK_7,The punchline often arrives before the set-up. Do you know the problem with UDP jokes?,La chute arrive avant le reste. Tu connais le problème des blagues UDP ?
+GEEK_7,The punchline often arrives before the set-up. Do you know the problem with UDP jokes?,La chute arrive avant le reste. Tu connais le problÃ¨me des blagues UDPÂ ?
 GEEK_8,What made the Java developers wear glasses?... They can't C.,Tu sais pourquoi l'iPhone 6 se plie ? Parce que l'Apple Store.
-GEEK_9,I took a Microsoft Office class in high school… I Excelled in it !,J'ai pris des cours de Microsoft Office. J'y excelle !
-GEEK_10,"Yo momma so big, she’s got her own OSI layer between L3 and L4, because the Transport layer can’t handle her.","Ta mère est si grosse qu'elle à sa propre couche OSI entre L3 et L4, parce que la couche transport ne peut pas la supporter."
-GEEK_11,Yo mamma is so fat that she sat on a binary tree and made it a linked list in constant time.,A quoi sert Internet Explorer ? A télécharger Google Chrome. 
-GEEK_12,My new year’s resolution is 1080p.,Ma résolution pour cette nouvelle année est 1080p
+GEEK_9,I took a Microsoft Office class in high schoolâ€¦ I Excelled in itÂ !,J'ai pris des cours de Microsoft Office. J'y excelleÂ !
+GEEK_10,"Yo momma so big, sheâ€™s got her own OSI layer between L3 and L4, because the Transport layer canâ€™t handle her.","Ta mÃ¨re est si grosse qu'elle Ã  sa propre couche OSI entre L3 et L4, parce que la couche transport ne peut pas la supporter."
+GEEK_11,Yo mamma is so fat that she sat on a binary tree and made it a linked list in constant time.,A quoi sert Internet Explorer ? A tÃ©lÃ©charger Google Chrome. 
+GEEK_12,My new yearâ€™s resolution is 1080p.,Ma rÃ©solution pour cette nouvelle annÃ©e est 1080p
 GEEK_13,You are so stupid your intellisence on Visual Studio gave up.,Pourquoi les geeks doivent-ils suivre une formation incendie? A cause des pare-feux. 
-GEEK_14,"What do you call a fat computer? A big mac!
-",Un geek ne descend pas du métro. Il libère la RAM...
-GEEK_15,There are only 10 types of people in the world : those who understand binary and those who don’t.,Il y a 10 types de personnes dans le monde : ceux qui comprennent le binaire et les autres
+GEEK_14,What do you call a fat computer? A big mac!,Un geek ne descend pas du mÃ©tro. Il libÃ¨re la RAM...
+GEEK_15,There are only 10 types of people in the worldÂ : those who understand binary and those who donâ€™t.,Il y a 10 types de personnes dans le mondeÂ : ceux qui comprennent le binaire et les autres
 LILIAN_0,"- I have a good and a bad news.
-- The good one?
+- The goodÂ one ?
 - I found a golden ring.
-- The bad one ?
+- The bad one ?
 - We go to Mordor.","- J'ai une bonne et une mauvaise nouvelle. 
 - La bonne ? 
-- J'ai trouvé cette bague en or. 
+- J'ai trouvÃ© cette bague en or. 
 - La mauvaise ? 
 - On part pour le Mordor."
-MARTIN_0,,"T'aimes bien SCRATCH ? Non, je préfère les lacets"
+LILIAN_1,I know how to exit vim,Je sais quitter vim
+MARTIN_0,,"T'aimes bien SCRATCH ? Non, je prÃ©fÃ¨re les lacets"
+MARTIN_1,,"- On met quoi comme police pour le titre ?
+- Roxane"
