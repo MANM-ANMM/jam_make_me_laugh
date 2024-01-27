@@ -20,6 +20,7 @@ radius = 18.0
 neighbor_distance = 600.0
 time_horizon_obstacles = 0.1
 avoidance_mask = 3
+avoidance_priority = 0.5
 script = ExtResource("2_thgto")
 
 [node name="Civilian0" type="Sprite2D" parent="."]
