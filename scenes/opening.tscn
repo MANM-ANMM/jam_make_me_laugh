@@ -1,3 +1,46 @@
-[gd_scene format=3 uid="uid://dd8xfs4e6wpgp"]
+[gd_scene load_steps=3 format=3 uid="uid://dd8xfs4e6wpgp"]
 
-[node name="Opening" type="Node2D"]
+[ext_resource type="Script" path="res://scripts/opening.gd" id="1_1x8y2"]
+[ext_resource type="FontFile" uid="uid://ettwgfhg81x0" path="res://assets/fonts/BloodyTerror-GOW9Z.ttf" id="2_8vohd"]
+
+[node name="Opening" type="CanvasLayer"]
+script = ExtResource("1_1x8y2")
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -15.5
+offset_right = 23.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="CloseButton" type="Button" parent="."]
+offset_right = 50.0
+offset_bottom = 31.0
+text = "Close"
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -188.0
+offset_right = 188.0
+offset_bottom = 325.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_8vohd")
+theme_override_font_sizes/font_size = 150
+text = "MDR"
+
+[node name="Background" type="Sprite2D" parent="."]
+
+[connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]
+[connection signal="button_down" from="CloseButton" to="." method="_on_close_button_button_down"]
