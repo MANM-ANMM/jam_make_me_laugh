@@ -31,7 +31,6 @@ shape = SubResource("CircleShape2D_eus3o")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.065, 0.065)
 sprite_frames = ExtResource("5_0t3sa")
-animation = &"Walk0"
-frame_progress = 0.458966
+animation = &"WalkLilianne"
 
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
