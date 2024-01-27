@@ -29,4 +29,21 @@ wait_time = 2.0
 one_shot = true
 autostart = true
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Joke" type="RichTextLabel" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -40.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 0
+fit_content = true
+scroll_active = false
+scroll_following = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

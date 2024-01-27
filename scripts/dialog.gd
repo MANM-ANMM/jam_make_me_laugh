@@ -1,9 +1,11 @@
 extends Node2D
 
 var skippable = false
+var profile
+var joke
 
 func _ready():
-	pass # Replace with function body.
+	$CanvasLayer/Joke.text = joke
 
 func _update_face(_delta):
 	if Input.is_action_just_pressed("move_left"):
