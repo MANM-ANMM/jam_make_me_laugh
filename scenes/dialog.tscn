@@ -12,12 +12,11 @@ script = ExtResource("1_s6hvb")
 eye_radius = 20
 
 [node name="Label" type="Label" parent="."]
-offset_left = -57.0
-offset_top = -239.0
-offset_right = 130.0
-offset_bottom = -162.0
-text = "try ZQSD
-and space"
+offset_left = -58.0
+offset_top = -292.0
+offset_right = 14.0
+offset_bottom = -268.0
+text = "try ZQSD"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(6, 20)
@@ -46,4 +45,19 @@ fit_content = true
 scroll_active = false
 scroll_following = true
 
+[node name="Skip" type="Label" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -46.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "Space to skip"
+horizontal_alignment = 2
+
+[connection signal="flee_ends" from="Profile" to="." method="_on_profile_flee_ends"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

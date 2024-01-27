@@ -64,7 +64,6 @@ func flee(dir : FLEE_DIR):
 			flee_dest = Vector2(bounds.x + 100, bounds.y / 2)
 		FLEE_DIR.Down:
 			flee_dest = Vector2(position.x, bounds.y + 100)
-			
 	
 func _set_mouth_pos(open : bool):
 	node_mouth_o.visible = open
@@ -99,6 +98,6 @@ func _process(delta):
 		var progression : float = 1 - fleeing_progress / fleeing_time
 		position = start_pos + ease(progression, 2) * (flee_dest - start_pos)
 		scale = start_scale + ease(progression, 1./2.) * (Vector2(0.1, 0.1) - start_scale)
-		if (progression <= 0):
+		if (progression >= 1):
 			fleeing = false
 			emit_signal("flee_ends")
