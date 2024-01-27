@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://1o547wqr41xw"]
 
 [ext_resource type="Script" path="res://scripts/cop_car.gd" id="1_5d7p2"]
-[ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
-[ext_resource type="Texture2D" uid="uid://btfewectddc6e" path="res://assets/sprites/car/car.png" id="2_geuxy"]
+[ext_resource type="PackedScene" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
+[ext_resource type="Texture2D" uid="uid://g7oyjbhpgwfl" path="res://assets/sprites/car/car.png" id="2_geuxy"]
 [ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="3_yu5hw"]
-[ext_resource type="PackedScene" uid="uid://dsw1fqwwmb28v" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
+[ext_resource type="PackedScene" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0d51"]
 size = Vector2(77, 31)
@@ -19,6 +19,7 @@ radius = 390.0
 size = Vector2(90, 40)
 
 [node name="VoiturePolice" type="CharacterBody2D"]
+collision_layer = 9
 script = ExtResource("1_5d7p2")
 
 [node name="FlashingLight" parent="." instance=ExtResource("1_v8n2l")]
