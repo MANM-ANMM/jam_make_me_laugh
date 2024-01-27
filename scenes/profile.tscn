@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8vf2456poo8w"]
+
+[ext_resource type="Script" path="res://scripts/profile.gd" id="1_5wopq"]
+[ext_resource type="Texture2D" uid="uid://b8hbc2tojwll2" path="res://assets/sprites/profils/profil1_base.png" id="2_slrxa"]
+[ext_resource type="Texture2D" uid="uid://c5l0x0kamcork" path="res://assets/sprites/profils/profil1_pupils.png" id="3_41x8v"]
+
+[node name="Profile" type="Node2D"]
+script = ExtResource("1_5wopq")
+
+[node name="Face" type="Sprite2D" parent="."]
+texture = ExtResource("2_slrxa")
+
+[node name="Pupils" type="Sprite2D" parent="."]
+texture = ExtResource("3_41x8v")
