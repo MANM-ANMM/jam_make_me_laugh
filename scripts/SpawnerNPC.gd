@@ -19,6 +19,6 @@ func _on_timer_timeout():
 
 func spawn_npc():
 	var npc : PNJ = npc_scene.instantiate()
-	npc.position = positions_spawn.pick_random().position
+	npc.position = positions_spawn.pick_random().global_position
 	npc.target_entrance = positions_spawn.pick_random()
 	add_sibling(npc)

@@ -28,4 +28,4 @@ func _on_velocity_computed(safe_velocity: Vector2):
 func _on_navigation_agent_2d_set_up_terminated():
 	navigation_agent.velocity_computed.connect(_on_velocity_computed)
 	if target_entrance:
-		set_movement_target(target_entrance.position)
+		set_movement_target(target_entrance.global_position)
