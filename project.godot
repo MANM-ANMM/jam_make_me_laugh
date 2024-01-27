@@ -21,6 +21,7 @@ config/icon="res://assets/sprites/clown.png"
 [autoload]
 
 BusEvent="*res://scripts/BusEvent.gd"
+Var="*res://scripts/Var.gd"
 
 [input]
 
