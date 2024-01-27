@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgc8bafpgvbrr"]
+[gd_scene load_steps=3 format=3 uid="uid://dq4qagax7essg"]
 
 [ext_resource type="Script" path="res://scripts/SpawnerNPC.gd" id="1_wb8ow"]
 [ext_resource type="PackedScene" uid="uid://dw2ff30pbqo78" path="res://scenes/pnj.tscn" id="2_lcoap"]

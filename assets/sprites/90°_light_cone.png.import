@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br4kbol1n2ur3"
-path="res://.godot/imported/civilian1.png-248a994c8baa1d93c5b2417f44b5284f.ctex"
+uid="uid://dkyhrwmi2202g"
+path="res://.godot/imported/90°_light_cone.png-d782d3109992247cc721eb582f503527.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/civilians/civilian1.png"
-dest_files=["res://.godot/imported/civilian1.png-248a994c8baa1d93c5b2417f44b5284f.ctex"]
+source_file="res://assets/sprites/90°_light_cone.png"
+dest_files=["res://.godot/imported/90°_light_cone.png-d782d3109992247cc721eb582f503527.ctex"]
 
 [params]
 
