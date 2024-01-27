@@ -78,6 +78,8 @@ locale/translations=PackedStringArray("res://translations/Translations.csv", "re
 2d_physics/layer_2="Player"
 2d_physics/layer_3="NPC"
 2d_physics/layer_4="Police"
+avoidance/layer_1="all"
+avoidance/layer_2="player"
 
 [rendering]
 
