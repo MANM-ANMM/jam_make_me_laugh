@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://c47mqra7damn"]
+[gd_scene load_steps=2 format=3 uid="uid://1o547wqr41xw"]
+
+[ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
 
 [node name="VoiturePolice" type="Node2D"]
+
+[node name="FlashingLight" parent="." instance=ExtResource("1_v8n2l")]

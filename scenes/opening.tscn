@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd8xfs4e6wpgp"]
+[gd_scene load_steps=3 format=3 uid="uid://caba367xro747"]
 
 [ext_resource type="Script" path="res://scripts/opening.gd" id="1_1x8y2"]
 [ext_resource type="FontFile" uid="uid://ettwgfhg81x0" path="res://assets/fonts/BloodyTerror-GOW9Z.ttf" id="2_8vohd"]
