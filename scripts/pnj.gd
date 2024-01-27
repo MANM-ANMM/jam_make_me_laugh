@@ -14,6 +14,7 @@ enum State {
 
 var state : State = State.Normal
 
+
 func _process(delta):
 	rotation = velocity.angle()
 

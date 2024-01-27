@@ -28,6 +28,7 @@ func set_movement_target(movement_target: Vector2):
 	navigation_agent.set_target_position(movement_target)
 
 func _physics_process(_delta):
+	
 	match state:
 		State.Normal:
 			move_normal()

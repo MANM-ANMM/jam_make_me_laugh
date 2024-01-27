@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
 class_name Player
-const SPEED = 500.0
+const SPEED = 100.0
 
 @onready var area_detection_pnj := $DetectPNJ
+
+func _process(delta):
+	rotation = velocity.angle()
 
 func _physics_process(_delta):
 	move()
@@ -29,5 +32,5 @@ func move():
 	move_and_slide()
 
 func lose():
-	if get_tree().change_scene_to_file("res://scenes/ending.tscn") != OK:
-		print ("Error passing from Opening scene to main scene")
+	
+	get_tree().change_scene_to_file.call_deferred("res://scenes/ending.tscn")

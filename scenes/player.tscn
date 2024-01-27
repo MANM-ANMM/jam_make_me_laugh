@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_u3s0y"]
 [ext_resource type="Texture2D" uid="uid://b6akvdaf721cl" path="res://assets/sprites/player_light.png" id="2_ipexp"]
-[ext_resource type="Texture2D" uid="uid://b5ch5ug63h16j" path="res://assets/sprites/clown.png" id="3_6xl70"]
+[ext_resource type="Texture2D" uid="uid://c8sbr4hgwcv64" path="res://assets/sprites/clown/clown.png" id="3_ht3tp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_074ow"]
 radius = 15.0
@@ -21,8 +21,8 @@ texture = ExtResource("2_ipexp")
 texture_scale = 0.8
 
 [node name="Clown" type="Sprite2D" parent="."]
-scale = Vector2(0.102, 0.102)
-texture = ExtResource("3_6xl70")
+scale = Vector2(0.067, 0.067)
+texture = ExtResource("3_ht3tp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_074ow")
