@@ -8,4 +8,6 @@ func _ready():
 
 func report_aggression():
 	var cop = policier_scene.instantiate()
+	cop.position = global_position
 	add_sibling(cop)
+	

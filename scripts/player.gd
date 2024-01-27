@@ -1,12 +1,18 @@
 extends CharacterBody2D
 
 class_name Player
-const SPEED = 100.0
+const SPEED = 120.0
 
 @onready var area_detection_pnj := $DetectPNJ
+@onready var animated_sprite := $AnimatedSprite2D
 
-func _process(delta):
-	rotation = velocity.angle()
+func _ready():
+	animated_sprite.play()
+	animated_sprite.speed_scale = 0.0
+
+func _process(_delta):
+	if velocity != Vector2.ZERO:
+		rotation = velocity.angle()
 
 func _physics_process(_delta):
 	move()
@@ -28,6 +34,8 @@ func move():
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
+	
+	animated_sprite.speed_scale = velocity.length()/SPEED
 	
 	move_and_slide()
 

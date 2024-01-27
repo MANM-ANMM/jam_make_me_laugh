@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_u3s0y"]
 [ext_resource type="Texture2D" uid="uid://b6akvdaf721cl" path="res://assets/sprites/player_light.png" id="2_ipexp"]
-[ext_resource type="Texture2D" uid="uid://c8sbr4hgwcv64" path="res://assets/sprites/clown/clown.png" id="3_ht3tp"]
+[ext_resource type="SpriteFrames" uid="uid://bphhinoyfpipf" path="res://assets/sprites/clown/walk/clown_walk_sprite_frames.tres" id="4_uabbt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_074ow"]
 radius = 15.0
@@ -23,10 +23,6 @@ shadow_enabled = true
 texture = ExtResource("2_ipexp")
 texture_scale = 0.8
 
-[node name="Clown" type="Sprite2D" parent="."]
-scale = Vector2(0.067, 0.067)
-texture = ExtResource("3_ht3tp")
-
 [node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
 radius = 20.0
 avoidance_layers = 2
@@ -41,3 +37,9 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectPNJ"]
 shape = SubResource("CircleShape2D_4wcw4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.065, 0.065)
+sprite_frames = ExtResource("4_uabbt")
+animation = &"Walk"
+frame_progress = 0.346381

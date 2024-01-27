@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b8vf2456poo8w" path="res://scenes/profile.tscn" id="2_1n2tf"]
 
 [node name="dialog" type="Node2D"]
+process_mode = 3
 position = Vector2(570, 308)
 script = ExtResource("1_s6hvb")
 
@@ -17,3 +18,15 @@ offset_right = 130.0
 offset_bottom = -162.0
 text = "try ZQSD
 and space"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(6, 20)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
