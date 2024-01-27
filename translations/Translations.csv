@@ -4,20 +4,28 @@ KEY_START,Start,Commencer
 KEY_RESTART,Restart,Recommencer
 KEY_CLOSE,Exit,Fermer
 KEY_SKIP,Space to skip,Espace pour passer
-GEEK_0,"An IPv4 address walks into the bar and yells, ""Bartender! Give me a CIDR, I'm exhausted!"" ",Quelle différence y a-t-il entre Windows et un clou ? Aucune : tous deux sont destinés à se planter.
+GEEK_0,"An IPv4 address walks into the bar and yells, ""Bartender! Give me a CIDR, I'm exhausted!"" ","Quelle différence y a-t-il entre Windows et un clou ? 
+Aucune : tous deux sont destinés à se planter."
 GEEK_1,"What's up with the jokes... Give it a REST, guy...","C'est un testeur qui rentre dans un bar, il commande une bière, 10 bières, -1 bière, 1.5 bières, il sort du bar, commande 1 bière, retourne dans le bar. Un client rentre dans le bar et demande où sont les toilettes, le bar prend feu. "
-GEEK_2,Doctor: What seems to be the problem? Router: It hurts when IP.,"J'ai une blague sur UDP, mais je suis pas sûr que tu la captes."
-GEEK_3,I'm going to keep telling you this TCP joke until you get it.,Où partent les geeks en vacances ? Au C-Shell.
-GEEK_4,The problem with SSL jokes is that you must get someone else to vouch for you before you can tell the joke.,Pourquoi les Geek sont-ils fiers ? Parce qu'ils ont une Gygabyte.
+GEEK_2,"Doctor: What seems to be the problem? 
+Router: It hurts when IP.","J'ai une blague sur UDP, mais je suis pas sûr que tu la captes."
+GEEK_3,I'm going to keep telling you this TCP joke until you get it.,"Où partent les geeks en vacances ? 
+Au C-Shell."
+GEEK_4,The problem with SSL jokes is that you must get someone else to vouch for you before you can tell the joke.,"Pourquoi les Geek sont-ils fiers ? 
+Parce qu'ils ont une Gygabyte."
 GEEK_5,"The SYN flood attack: ""knock knock. who's there? knock knock. who's there? knock knock. who's there? …","L'attaque SYN: ""toc toc. Qui est là? toc toc. Qui est là? toc toc. Qui est là? …"
 GEEK_6,404 joke not found.,404 blague introuvable.
-GEEK_7,The punchline often arrives before the set-up. Do you know the problem with UDP jokes?,La chute arrive avant le reste. Tu connais le problème des blagues UDP ?
-GEEK_8,What made the Java developers wear glasses?... They can't C.,Tu sais pourquoi l'iPhone 6 se plie ? Parce que l'Apple Store.
+GEEK_7,The punchline often arrives before the set-up. Do you know the problem with UDP jokes?,"La chute arrive avant le reste. 
+Tu connais le problème des blagues UDP ?"
+GEEK_8,What made the Java developers wear glasses?... They can't C.,"Tu sais pourquoi l'iPhone 6 se plie ? 
+Parce que l'Apple Store."
 GEEK_9,I took a Microsoft Office class in high school… I Excelled in it !,J'ai pris des cours de Microsoft Office. J'y excelle !
 GEEK_10,"Yo momma so big, she’s got her own OSI layer between L3 and L4, because the Transport layer can’t handle her.","Ta mère est si grosse qu'elle à sa propre couche OSI entre L3 et L4, parce que la couche transport ne peut pas la supporter."
-GEEK_11,Yo mamma is so fat that she sat on a binary tree and made it a linked list in constant time.,A quoi sert Internet Explorer ? A télécharger Google Chrome. 
+GEEK_11,Yo mamma is so fat that she sat on a binary tree and made it a linked list in constant time.,"A quoi sert Internet Explorer ? 
+A télécharger Google Chrome. "
 GEEK_12,My new year’s resolution is 1080p.,Ma résolution pour cette nouvelle année est 1080p
-GEEK_13,You are so stupid your intellisence on Visual Studio gave up.,Pourquoi les geeks doivent-ils suivre une formation incendie? A cause des pare-feux. 
+GEEK_13,You are so stupid your intellisence on Visual Studio gave up.,"Pourquoi les geeks doivent-ils suivre une formation incendie? 
+A cause des pare-feux. "
 GEEK_14,What do you call a fat computer? A big mac!,Un geek ne descend pas du métro. Il libère la RAM...
 GEEK_15,There are only 10 types of people in the world : those who understand binary and those who don’t.,Il y a 10 types de personnes dans le monde : ceux qui comprennent le binaire et les autres
 LILIAN_0,"- I have a good and a bad news.
@@ -29,7 +37,64 @@ LILIAN_0,"- I have a good and a bad news.
 - J'ai trouvé cette bague en or. 
 - La mauvaise ? 
 - On part pour le Mordor."
-LILIAN_1,I know how to exit vim,Je sais quitter vim
-MARTIN_0,,"T'aimes bien SCRATCH ? Non, je préfère les lacets"
+LILIAN_1,I know how to exit vim.,Je sais quitter vim.
+MARTIN_0,,"T'aimes bien SCRATCH ? 
+Non, je préfère les lacets"
 MARTIN_1,,"- On met quoi comme police pour le titre ?
 - Roxane"
+MARTIN_2,,"C'est une vache et un citron qui font un braquage. La vache dit ""que personne ne bouse"" et le citron ajoute ""plus un zeste !"""
+MARTIN_3,,"C'est un aveugle qui rendre dans un bar, puis dans une table, puis dans une chaise"
+MARTIN_4,,"Quel est le comble pour un serrurier ? 
+Mettre la clé sous la porte."
+MARTIN_5,,"Est-ce que vous connaissez l’histoire du poil ? Avant, il était bien. Maintenant, il est pubien."
+MARTIN_6,,"Quel est le point commun entre un désinfectant et un témoin de Jéhovah ? 
+Ils sont tous les deux antiseptiques !"
+MARTIN_7,,Quel est le sport le plus silencieux ? Le para-chut !
+MARTIN_8,,C'est un mec qui rentre dans un café. Et plouf !
+MARTIN_9,,C'est un mec qui rentre dans un bar et qui dit ''C'est moi !'' mais en fait c'était pas lui.
+MARTIN_10,,"Connaissez-vous l’histoire du pingouin qui respirait par les fesses ? 
+Un beau jour, il s’assoit sur une chaise et meurt."
+MARTIN_11,,Est-ce que vous connaissez l’histoire de la chaise ? Elle est pliante.
+MARTIN_12,,"C’est quoi le comble pour un Égyptien?
+C’est d’avoir un papi russe."
+MARTIN_13,,"- Est ce qu'on kangourou peut sauter plus haut qu'une maison ?
+- Je sais pas ?
+- Tu as déjà vu une maison sauter ?"
+MARTIN_14,,"J’ai une blague sur les magasins, mais elle n’a pas supermarché."
+MARTIN_15,,"Que fait une fraise sur un cheval ? 
+Tagada tagada…"
+MAMIE_0,,"Un enfant dit ""Maman, maman, je ne veux plus dormir avec mamie"". Sa mère lui répond : ""je sais bien mon chéri, mais tu sais bien qu'on n'a pas assez de sous pour l'enterrer"""
+MAMIE_1,,"Maman, il y a quelqu'un à la porte qui fait la collecte pour la maison de retraite.
+Je peux lui donner grand-mère ? "
+MAMIE_2,,"Un homme vient de mourir.
+Aux funérailles, le curé se répand en éloges pour le défunt : - Un bon mari, un bon chrétien, un père exemplaire...
+La veuve se penche vers son fils et lui dit à voix basse : - Va donc voir dans le cercueil si c'est bien ton père. "
+MAMIE_3,,"- Mamie mamie, c’est quoi un amant ?
+- Et bien c’est un monsieur qui… OH NOM DE DIEU !
+La mamie se jette vers son armoire, ouvre la porte, et un squelette tombe à terre !"
+MAMIE_4,,"- Comment il s'appelle déjà, ce bel allemand qui me rend complètement folle ?
+- Alzheimer, maman, Alzheimer! "
+MAMIE_5,,"- Que faites-vous depuis que vous êtes en retraite ?
+- Je fais de la recherche !
+- Ah bon ! Et dans quoi ?
+- Tous les jours, je cherche mes lunettes, ma canne, mon dentier, mes clés… "
+MAMIE_6,,"- Mamie, c'est quoi l'animal avec la longue trompe qui crache de l'eau là bas ?
+- Chéri, remet ton pantalon tu fais peur au petit... "
+MAMIE_7,,"- Maman, maman, grand-mère m'a mordue.
+- C'est bien fait. Je t'avais bien dit de pas t'approcher de la cage."
+MAMIE_8,,"Qu'est-ce qui est blanc et qui tombe en hiver lorsqu'il fait froid ?:
+Les p'tits vieux."
+MAMIE_9,,"A leur 50 ans de mariage, un mamie s'exclame :  
+- Chéri, je sens la même chaleur qu'il y a 50 ans !
+- Normal, t'as les nichons dans la soupe !"
+MAMIE_10,,"Pourquoi fait-on prendre des bains de boue aux vieux?
+- Pour qu'ils s'habituent à la terre "
+MAMIE_11,,"Le médecin examine une vieille femme qui agonise. Il se tourne vers le veuf imminent:
+- Ça fait longtemps qu'elle râle comme ça ?
+- Bah oui, en fait depuis qu'on est mariés"
+MAMIE_12,,"Canicule en été, mamie va y passer."
+MAMIE_13,,"Quelle est la différence entre un vieux et une pizza ?
+La pizza ne hurle pas quand tu la mets au four."
+MAMIE_14,,Ta mère est tellement vieille qu’elle a écrit la préface de la Bible.
+MAMIE_15,,"Quelle est la différence entre un vieux et un renard ?
+Le renard a la queue touffue et le vieux a la queue foutue !"
