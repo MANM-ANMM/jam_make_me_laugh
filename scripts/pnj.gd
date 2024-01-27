@@ -4,12 +4,10 @@ class_name PNJ
 @export var movement_speed: float = 80.0
 @onready var navigation_agent: NavigationAgent2D = get_node("NavigationAgent2D")
 var target_entrance:Marker2D
-var fou:Player
 var commisariat: Marker2D
 
 enum State {
 	Normal,
-	Accoste,
 	Fly,
 }
 
@@ -23,13 +21,7 @@ func set_movement_target(movement_target: Vector2):
 	navigation_agent.set_target_position(movement_target)
 
 func _physics_process(_delta):
-	match state:
-		State.Normal:
-			move_normal()
-		State.Accoste:
-			pass
-		State.Fly:
-			move_normal()
+	move_normal()
 
 func move_normal():
 	if navigation_agent.is_navigation_finished():
@@ -50,25 +42,18 @@ func interact(player:Player):
 	match state:
 		State.Normal:
 			accoster(player)
-		State.Accoste:
-			fuire()
 		State.Fly:
 			tuer()
 
 func accoster(player:Player):
-	navigation_agent.velocity_computed.disconnect(_on_velocity_computed)
-	velocity = Vector2.ZERO
-	state = State.Fly
-	fou = player
 	BusEvent.dialog.emit($Joke.profile, $Joke.joke)
-
+	fuire()
 
 func tuer():
 	queue_free()
 
 func fuire():
 	state = State.Fly
-	navigation_agent.velocity_computed.connect(_on_velocity_computed)
 	set_movement_target(commisariat.global_position)
 	navigation_agent.avoidance_mask += 4
 	navigation_agent.avoidance_priority = 1.0
