@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhtenqjiedfo3"]
+[gd_scene load_steps=9 format=3 uid="uid://dhtenqjiedfo3"]
 
 [ext_resource type="PackedScene" uid="uid://ge6iuqdhaydc" path="res://scenes/player.tscn" id="1_0t2k1"]
 [ext_resource type="Texture2D" uid="uid://bfaidxyd1xo7v" path="res://icon.svg" id="1_bqshm"]
@@ -6,6 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://dekm7g07xoaib" path="res://scenes/building.tscn" id="3_wl3fn"]
 [ext_resource type="NavigationPolygon" uid="uid://5qum1p8j44ww" path="res://navpolygon/pnj_polygons.tres" id="4_avuho"]
 [ext_resource type="PackedScene" uid="uid://dq4qagax7essg" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
+[ext_resource type="PackedScene" uid="uid://1o547wqr41xw" path="res://scenes/cop_car.tscn" id="7_rir1b"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_styr4"]
+vertices = PackedVector2Array(558, 528, 1185, 656, -84, 663, 190, 528, 408, 16, 590, 16, 556, 40, 768, 341, 807, 313, 807, 361, 915, 105, 852, 16, 1198, 16, 1175, 105, 1175, 361, 558, 272, 408, 235, 190, 272, 40, 235, -59, 16, 40, 16)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6), PackedInt32Array(7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(13, 12, 1, 14), PackedInt32Array(14, 1, 0, 9), PackedInt32Array(9, 0, 15, 7), PackedInt32Array(6, 7, 15), PackedInt32Array(16, 4, 6, 15), PackedInt32Array(16, 15, 17, 18), PackedInt32Array(19, 20, 18, 2), PackedInt32Array(3, 2, 18, 17)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-136, -64, 1280, -64, 1264, 736, -168, 744)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 80.0
 
 [node name="Level" type="Node2D"]
 
@@ -17,10 +25,17 @@ texture = ExtResource("1_bqshm")
 [node name="Player" parent="." instance=ExtResource("1_0t2k1")]
 position = Vector2(237, 235)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(1.725, 1.725)
+
 [node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
 position = Vector2(881, 65)
 motion_mode = 1
 movement_speed = null
+
+[node name="NavigationRegion2D2" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_styr4")
+navigation_layers = 2
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = ExtResource("4_avuho")
@@ -42,3 +57,9 @@ rotation = -2.1893
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0, 0, 0, 1)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+editor_only = true
+
+[node name="VoiturePolice" parent="." instance=ExtResource("7_rir1b")]
+position = Vector2(464, 16)

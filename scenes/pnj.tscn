@@ -1,25 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://dw2ff30pbqo78"]
+[gd_scene load_steps=6 format=3 uid="uid://dw2ff30pbqo78"]
 
 [ext_resource type="Script" path="res://scripts/pnj.gd" id="1_1ypm5"]
-[ext_resource type="Script" path="res://scripts/pnj_navigation.gd" id="2_kvyym"]
+[ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="2_thgto"]
 [ext_resource type="Texture2D" uid="uid://cxboublrhnd1w" path="res://assets/sprites/civilians/civilian0.png" id="3_rpeo7"]
+[ext_resource type="PackedScene" uid="uid://7uq08lusm73k" path="res://scenes/joke.tscn" id="4_gsg5g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eus3o"]
+radius = 15.0
 
 [node name="PNJ" type="CharacterBody2D"]
 script = ExtResource("1_1ypm5")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-path_desired_distance = 5.0
+path_desired_distance = 10.0
+path_max_distance = 400.0
 avoidance_enabled = true
-radius = 12.0
-script = ExtResource("2_kvyym")
+radius = 18.0
+neighbor_distance = 600.0
+time_horizon_obstacles = 0.1
+avoidance_mask = 3
+script = ExtResource("2_thgto")
 
 [node name="Civilian0" type="Sprite2D" parent="."]
-scale = Vector2(0.04, 0.04)
+scale = Vector2(0.065, 0.065)
 texture = ExtResource("3_rpeo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_eus3o")
+
+[node name="Joke" parent="." instance=ExtResource("4_gsg5g")]
 
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]

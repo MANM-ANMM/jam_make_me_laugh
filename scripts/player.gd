@@ -19,7 +19,7 @@ func action():
 func move():
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if direction:
 		velocity = direction * SPEED
 	else:
@@ -27,3 +27,7 @@ func move():
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 	
 	move_and_slide()
+
+func lose():
+	if get_tree().change_scene_to_file("res://scenes/ending.tscn") != OK:
+		print ("Error passing from Opening scene to main scene")
