@@ -1,6 +1,10 @@
 extends Node2D
 class_name Profil
 enum EYE_POS {Right, Left, Center}
+enum FLEE_DIR {Right, Left, Down}
+
+signal speak_ends
+signal flee_ends
 
 #childs
 @onready var node_face = $Face
@@ -11,6 +15,15 @@ enum EYE_POS {Right, Left, Center}
 
 var eye_dest := Vector2.ZERO
 var eye_pos := Vector2.ZERO
+
+
+var flee_dest : Vector2 = Vector2(0, 0)
+var fleeing := false
+@export var fleeing_time := 1.4
+var fleeing_progress := fleeing_time
+var start_pos : Vector2
+var start_scale : Vector2
+
 
 var sentence := ""
 var word_progress := speak_speed
@@ -39,6 +52,20 @@ func look_toward(pos : EYE_POS):
 func speak(tone_sequence : String):
 	sentence = tone_sequence.reverse()
 	
+func flee(dir : FLEE_DIR):
+	var bounds = get_tree().root.content_scale_size
+	fleeing = true
+	start_pos = position
+	start_scale = scale
+	match dir:
+		FLEE_DIR.Left:
+			flee_dest = Vector2(-bounds.x - 100, bounds.y / 2)
+		FLEE_DIR.Right:
+			flee_dest = Vector2(bounds.x + 100, bounds.y / 2)
+		FLEE_DIR.Down:
+			flee_dest = Vector2(position.x, bounds.y + 100)
+			
+	
 func _set_mouth_pos(open : bool):
 	node_mouth_o.visible = open
 	node_mouth_s.visible = !open
@@ -53,16 +80,25 @@ func _process(delta):
 									 randi_range(-eye_shaking, eye_shaking))
 	else:
 		node_pupils.position = eye_pos
-		
+	
+	
+	
 	if (sentence != ""):
 		word_progress -= delta
 		if (word_progress <= 0):
 			word_progress = speak_speed
 			_set_mouth_pos(sentence.right(1) == "O")
 			sentence = sentence.erase(sentence.length()-1)
-	else:
-		_set_mouth_pos(false)
-			
-		
-		
-		
+			if (sentence.length() == 0):
+				_set_mouth_pos(false)
+				emit_signal("speak_ends")
+	
+	
+	if (fleeing):
+		fleeing_progress -= delta
+		var progression : float = 1 - fleeing_progress / fleeing_time
+		position = start_pos + ease(progression, 2) * (flee_dest - start_pos)
+		scale = start_scale + ease(progression, 1./2.) * (Vector2(0.1, 0.1) - start_scale)
+		if (progression <= 0):
+			fleeing = false
+			emit_signal("flee_ends")
