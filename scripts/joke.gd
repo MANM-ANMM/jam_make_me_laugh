@@ -10,7 +10,7 @@ var joke = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	profiles.shuffle()
-	profile=profile[0]
+	profile=profiles[0]
 	
 	match profile:
 		'Geek':
