@@ -36,7 +36,7 @@ offset_bottom = 325.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_8dsr5")
 theme_override_font_sizes/font_size = 150
-text = "Game over"
+text = "GAME OVER"
 horizontal_alignment = 1
 
 [node name="RestartButton" type="Button" parent="."]
@@ -51,12 +51,12 @@ offset_right = 56.5
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 30
-text = "Restart"
+text = "KEY_RESTART"
 
 [node name="CloseButton" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
-text = "Close"
+text = "KEY_CLOSE"
 
 [connection signal="button_down" from="RestartButton" to="." method="_on_restart_button_button_down"]
 [connection signal="button_down" from="CloseButton" to="." method="_on_close_button_button_down"]

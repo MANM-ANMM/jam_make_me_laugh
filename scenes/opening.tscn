@@ -19,12 +19,12 @@ offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "KEY_START"
 
 [node name="CloseButton" type="Button" parent="."]
 offset_right = 50.0
 offset_bottom = 31.0
-text = "Close"
+text = "KEY_CLOSE"
 
 [node name="Title" type="Label" parent="."]
 anchors_preset = 5
@@ -42,5 +42,22 @@ text = "MDR"
 
 [node name="Background" type="Sprite2D" parent="."]
 
+[node name="LanguageButton" type="OptionButton" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_bottom = 31.0
+grow_horizontal = 0
+alignment = 1
+item_count = 2
+selected = 0
+allow_reselect = true
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Français"
+popup/item_1/id = 1
+
 [connection signal="button_down" from="StartButton" to="." method="_on_start_button_button_down"]
 [connection signal="button_down" from="CloseButton" to="." method="_on_close_button_button_down"]
+[connection signal="item_selected" from="LanguageButton" to="." method="_on_language_button_item_selected"]

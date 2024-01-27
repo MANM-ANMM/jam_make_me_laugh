@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 func _ready():
-	pass # Replace with function body.
+	TranslationServer.set_locale("en")
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("start"):
@@ -15,3 +15,10 @@ func _on_start_button_button_down():
 
 func _on_close_button_button_down():
 	get_tree().quit()
+
+func _on_language_button_item_selected(index):
+		match index:
+			0:
+				TranslationServer.set_locale("en")
+			1:
+				TranslationServer.set_locale("fr")

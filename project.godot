@@ -75,6 +75,10 @@ interaction={
 2d_physics/layer_3="NPC"
 2d_physics/layer_4="Police"
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://translations/Translations.csv", "res://translations/Translations.en.translation", "res://translations/Translations.fr.translation")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
