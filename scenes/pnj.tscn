@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/pnj.gd" id="1_1ypm5"]
 [ext_resource type="Script" path="res://scripts/pnj_navigation.gd" id="2_kvyym"]
 [ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="3_yafln"]
+[ext_resource type="Texture2D" uid="uid://cxboublrhnd1w" path="res://assets/sprites/civilians/civilian0.png" id="3_rpeo7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eus3o"]
 
@@ -13,8 +14,11 @@ script = ExtResource("1_1ypm5")
 path_desired_distance = 5.0
 avoidance_enabled = true
 radius = 12.0
-max_speed = 500.0
 script = ExtResource("2_kvyym")
+
+[node name="Civilian0" type="Sprite2D" parent="."]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("3_rpeo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_eus3o")

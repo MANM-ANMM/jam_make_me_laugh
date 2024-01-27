@@ -21,3 +21,6 @@ texture_scale = 0.8
 [node name="Clown" type="Sprite2D" parent="."]
 scale = Vector2(0.1625, 0.1625)
 texture = ExtResource("3_6xl70")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
+radius = 20.0
