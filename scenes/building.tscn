@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://btl8v25qmm374"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va8jb"]
+size = Vector2(208, 96)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pt8al"]
+polygon = PackedVector2Array(104, 48, 104, -48, -104, -48, -104, 48)
+
+[node name="Batiment" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_va8jb")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_pt8al")

@@ -10,3 +10,5 @@ script = ExtResource("1_u3s0y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_074ow")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]

@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-config/name="MakeMeLaugh"
+config/name="MDR"
+config/description="Clown tueur"
+run/main_scene="res://scenes/opening.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
+boot_splash/image="res://assets/sprites/clown.png"
+config/icon="res://assets/sprites/clown.png"
 
 [input]
 
