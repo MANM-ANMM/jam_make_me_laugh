@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" path="res://scripts/pnj.gd" id="1_1ypm5"]
 [ext_resource type="Script" path="res://scripts/pnj_navigation.gd" id="2_kvyym"]
-[ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="3_yafln"]
 [ext_resource type="Texture2D" uid="uid://cxboublrhnd1w" path="res://assets/sprites/civilians/civilian0.png" id="3_rpeo7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eus3o"]
@@ -22,8 +21,5 @@ texture = ExtResource("3_rpeo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_eus3o")
-
-[node name="FlashingLight" parent="." instance=ExtResource("3_yafln")]
-light_speed = 9
 
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]

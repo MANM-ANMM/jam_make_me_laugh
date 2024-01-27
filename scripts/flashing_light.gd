@@ -7,7 +7,7 @@ func _ready():
 
 @onready var red_light = $red
 @onready var blue_light = $blue
-@export_range(0.01, 20) var light_speed = 1
+@export_range(0.01, 20,0.01) var light_speed : float = 1.23
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
