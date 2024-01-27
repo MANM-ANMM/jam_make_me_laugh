@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ge6iuqdhaydc"]
+[gd_scene load_steps=6 format=3 uid="uid://ge6iuqdhaydc"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_u3s0y"]
 [ext_resource type="Texture2D" uid="uid://b6akvdaf721cl" path="res://assets/sprites/player_light.png" id="2_ipexp"]
@@ -6,12 +6,13 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_074ow"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4wcw4"]
+radius = 30.0
+
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
 motion_mode = 1
 script = ExtResource("1_u3s0y")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_074ow")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 shadow_enabled = true
@@ -19,8 +20,18 @@ texture = ExtResource("2_ipexp")
 texture_scale = 0.8
 
 [node name="Clown" type="Sprite2D" parent="."]
-scale = Vector2(0.1625, 0.1625)
+scale = Vector2(0.067, 0.067)
 texture = ExtResource("3_6xl70")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_074ow")
 
 [node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
 radius = 20.0
+
+[node name="DetectPNJ" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectPNJ"]
+shape = SubResource("CircleShape2D_4wcw4")
