@@ -1,15 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhtenqjiedfo3"]
+[gd_scene load_steps=7 format=3 uid="uid://dhtenqjiedfo3"]
 
 [ext_resource type="PackedScene" uid="uid://ge6iuqdhaydc" path="res://scenes/player.tscn" id="1_0t2k1"]
 [ext_resource type="Texture2D" uid="uid://bfaidxyd1xo7v" path="res://icon.svg" id="1_bqshm"]
 [ext_resource type="PackedScene" uid="uid://dw2ff30pbqo78" path="res://scenes/pnj.tscn" id="2_ppqx5"]
 [ext_resource type="PackedScene" uid="uid://dekm7g07xoaib" path="res://scenes/building.tscn" id="3_wl3fn"]
-
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_beeal"]
-vertices = PackedVector2Array(1101, 173, 881, 173, 879, 170, 1193, -36, 881, 293, 1101, 293, 484, 460, 484, 340, 1191, 692, 653, 62, 781, 240, 334, 167, 334, 47, -100, 692, 264, 460, 264, 340, -74, -45, 114, 167, 114, 47, 751, -8)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(3, 8, 5, 0), PackedInt32Array(9, 10, 7, 11, 12), PackedInt32Array(5, 8, 13, 6), PackedInt32Array(14, 6, 13), PackedInt32Array(15, 14, 13, 16, 17), PackedInt32Array(10, 2, 1, 4), PackedInt32Array(10, 4, 7), PackedInt32Array(11, 7, 15, 17), PackedInt32Array(18, 17, 16), PackedInt32Array(3, 2, 19), PackedInt32Array(16, 3, 19), PackedInt32Array(18, 16, 19, 12), PackedInt32Array(12, 19, 9)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-84, -56, 1204, -46, 1201, 702, -110, 702)])
-source_geometry_group_name = &"navigation_polygon_source_group"
+[ext_resource type="NavigationPolygon" uid="uid://5qum1p8j44ww" path="res://navpolygon/pnj_polygons.tres" id="4_avuho"]
+[ext_resource type="PackedScene" uid="uid://dgc8bafpgvbrr" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
 
 [node name="Level" type="Node2D"]
 
@@ -26,7 +22,7 @@ position = Vector2(881, 65)
 motion_mode = 1
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-navigation_polygon = SubResource("NavigationPolygon_beeal")
+navigation_polygon = ExtResource("4_avuho")
 
 [node name="Batiment" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
 position = Vector2(224, 107)
@@ -40,3 +36,8 @@ position = Vector2(374, 400)
 [node name="Batiment4" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
 position = Vector2(766, 116)
 rotation = -2.1893
+
+[node name="SpawnerNPC" parent="." instance=ExtResource("5_m3qhq")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)

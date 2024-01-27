@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dekm7g07xoaib"]
+[gd_scene load_steps=4 format=3 uid="uid://dekm7g07xoaib"]
+
+[ext_resource type="PackedScene" uid="uid://bf1a3dfbrevt8" path="res://scenes/entrance.tscn" id="1_vp7lx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_va8jb"]
 size = Vector2(208, 96)
@@ -13,3 +15,6 @@ shape = SubResource("RectangleShape2D_va8jb")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 occluder = SubResource("OccluderPolygon2D_pt8al")
+
+[node name="Entrance" parent="." instance=ExtResource("1_vp7lx")]
+position = Vector2(0, 56)
