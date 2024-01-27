@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ge6iuqdhaydc"]
+[gd_scene load_steps=5 format=3 uid="uid://ge6iuqdhaydc"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_u3s0y"]
+[ext_resource type="Texture2D" uid="uid://b6akvdaf721cl" path="res://assets/sprites/player_light.png" id="2_ipexp"]
+[ext_resource type="Texture2D" uid="uid://b5ch5ug63h16j" path="res://assets/sprites/clown.png" id="3_6xl70"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_074ow"]
 
@@ -12,3 +14,10 @@ script = ExtResource("1_u3s0y")
 shape = SubResource("CircleShape2D_074ow")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+shadow_enabled = true
+texture = ExtResource("2_ipexp")
+texture_scale = 0.8
+
+[node name="Clown" type="Sprite2D" parent="."]
+scale = Vector2(0.1625, 0.1625)
+texture = ExtResource("3_6xl70")
