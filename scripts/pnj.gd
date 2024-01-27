@@ -62,6 +62,8 @@ func accoster(player:Player):
 	velocity = Vector2.ZERO
 	state = State.Accoste
 	fou = player
+	BusEvent.dialog.emit($Joke.profile, $Joke.joke)
+
 
 func tuer():
 	queue_free()

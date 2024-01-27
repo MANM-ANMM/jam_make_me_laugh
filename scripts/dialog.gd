@@ -1,10 +1,9 @@
 extends Node2D
 
+var skippable = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
 
 func _update_face(delta):
 	if Input.is_action_just_pressed("move_left"):
@@ -22,4 +21,9 @@ func _update_face(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_update_face(delta)
-		
+	if skippable and Input.is_action_just_released("interaction"):
+		BusEvent.end_dialog.emit()
+		queue_free()
+
+func _on_timer_timeout():
+	skippable = true
