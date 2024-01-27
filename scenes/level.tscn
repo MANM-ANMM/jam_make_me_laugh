@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dw2ff30pbqo78" path="res://scenes/pnj.tscn" id="2_ppqx5"]
 [ext_resource type="PackedScene" uid="uid://dekm7g07xoaib" path="res://scenes/building.tscn" id="3_wl3fn"]
 [ext_resource type="NavigationPolygon" uid="uid://5qum1p8j44ww" path="res://navpolygon/pnj_polygons.tres" id="4_avuho"]
-[ext_resource type="PackedScene" uid="uid://dgc8bafpgvbrr" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
+[ext_resource type="PackedScene" uid="uid://dq4qagax7essg" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
 
 [node name="Level" type="Node2D"]
 
@@ -16,6 +16,9 @@ texture = ExtResource("1_bqshm")
 
 [node name="Player" parent="." instance=ExtResource("1_0t2k1")]
 position = Vector2(237, 235)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(1.725, 1.725)
 
 [node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
 position = Vector2(881, 65)
@@ -41,3 +44,6 @@ rotation = -2.1893
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0, 0, 0, 1)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+editor_only = true
