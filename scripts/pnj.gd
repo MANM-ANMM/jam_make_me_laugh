@@ -55,6 +55,7 @@ func accoster(player:Player):
 	fuire()
 
 func tuer():
+	Var.score+=1
 	queue_free()
 
 func fuire():

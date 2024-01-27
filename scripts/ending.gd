@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 func _ready():
-	pass # Replace with function body.
+	$Score.text = "Score: " + str(Var.score)
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("start"):
