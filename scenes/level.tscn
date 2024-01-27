@@ -17,6 +17,9 @@ texture = ExtResource("1_bqshm")
 [node name="Player" parent="." instance=ExtResource("1_0t2k1")]
 position = Vector2(237, 235)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(1.725, 1.725)
+
 [node name="PNJ" parent="." instance=ExtResource("2_ppqx5")]
 position = Vector2(881, 65)
 motion_mode = 1
@@ -41,3 +44,6 @@ rotation = -2.1893
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0, 0, 0, 1)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+editor_only = true

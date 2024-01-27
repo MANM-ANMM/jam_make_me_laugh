@@ -14,6 +14,9 @@ enum State {
 
 var state : State = State.Normal
 
+func _process(delta):
+	rotation = velocity.angle()
+
 func set_movement_target(movement_target: Vector2):
 	navigation_agent.set_target_position(movement_target)
 
