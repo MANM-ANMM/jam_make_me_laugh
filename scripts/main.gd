@@ -17,6 +17,8 @@ func _on_dialog(_profile, _joke):
 	$Level/Player/Camera2D.enabled = false
 	$Level.get_tree().paused = true
 	$Level.visible = false
+	print($AudioStreamPlayer.get_volume_db())
+	$AudioStreamPlayer.set_volume_db(-35)
 	instance = scene.instantiate()
 	instance.profile = _profile
 	instance.joke = _joke
@@ -27,4 +29,5 @@ func _on_end_dialog():
 	$Level.get_tree().paused = false
 	$Level.visible = true
 	$Level/Player.set_physics_process(false)
+	$AudioStreamPlayer.set_volume_db(-27)
 	get_tree().create_timer(0.5).timeout.connect(func():$Level/Player.set_physics_process(true))
