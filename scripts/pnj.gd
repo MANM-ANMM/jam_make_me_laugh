@@ -5,6 +5,7 @@ class_name PNJ
 @onready var navigation_agent: NavigationAgent2D = get_node("NavigationAgent2D")
 var target_entrance:Marker2D
 var commisariat: Marker2D
+var derniere_position_clown : Vector2
 
 enum State {
 	Normal,
@@ -67,6 +68,8 @@ func fuire():
 	set_movement_target(commisariat.global_position)
 	navigation_agent.avoidance_mask += 4
 	navigation_agent.avoidance_priority = 1.0
+	collision_layer += 16 # npc en fuite
+	derniere_position_clown = global_position
 
 func _on_velocity_computed(safe_velocity: Vector2):
 	velocity = safe_velocity
