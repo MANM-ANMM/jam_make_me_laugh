@@ -7,10 +7,8 @@ var target_entrance:Marker2D
 var commisariat: Marker2D
 var derniere_position_clown : Vector2
 var audio
-var audio_death
 var audio_help
 var chosen_audio
-var chosen_death
 var chosen_help
 var scene
 var instance
@@ -33,15 +31,12 @@ func _ready():
 	
 	animated_sprite.speed_scale = 0.0
 	audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
-	audio_death = [get_node("Death"), get_node("Death2"), get_node("Death3")]
 	audio_help = [get_node("Alaide"), get_node("Ayuda"), get_node("Help")]
 	
 	audio.shuffle()
-	audio_death.shuffle()
 	audio_help.shuffle()
 	
 	chosen_audio = audio[0]
-	chosen_death = audio_death[0]
 	chosen_help = audio_help[0]
 	
 	chosen_audio.play()
