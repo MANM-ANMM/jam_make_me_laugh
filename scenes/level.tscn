@@ -78,7 +78,7 @@ position = Vector2(788, 466)
 [node name="SpawnerNPC" parent="." instance=ExtResource("5_m3qhq")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0, 0, 0, 1)
+color = Color(0.239216, 0.239216, 0.239216, 1)
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 editor_only = true
