@@ -52,4 +52,19 @@ stream = ExtResource("7_flh8p")
 volume_db = -5.0
 max_distance = 100.0
 
+[node name="Help" type="AudioStreamPlayer" parent="."]
+
+[node name="Ayuda" type="AudioStreamPlayer" parent="."]
+
+[node name="Alaide" type="AudioStreamPlayer" parent="."]
+
+[node name="Death" type="AudioStreamPlayer" parent="."]
+
+[node name="Death2" type="AudioStreamPlayer" parent="."]
+
+[node name="Death3" type="AudioStreamPlayer" parent="."]
+
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
+[connection signal="finished" from="Death" to="." method="_on_death_finished"]
+[connection signal="finished" from="Death2" to="." method="_on_death_finished"]
+[connection signal="finished" from="Death3" to="." method="_on_death_finished"]

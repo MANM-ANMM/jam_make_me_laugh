@@ -6,6 +6,12 @@ class_name PNJ
 var target_entrance:Marker2D
 var commisariat: Marker2D
 var derniere_position_clown : Vector2
+var audio
+var audio_death
+var audio_help
+var chosen_audio
+var chosen_death
+var chosen_help
 
 enum State {
 	Normal,
@@ -23,9 +29,19 @@ func _ready():
 			animated_sprite.play('Walk0')
 	
 	animated_sprite.speed_scale = 0.0
-	var audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
+	audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
+	audio_death = [get_node("Death"), get_node("Death2"), get_node("Death3")]
+	audio_help = [get_node("Alaide"), get_node("Ayuda"), get_node("Help")]
+	
 	audio.shuffle()
-	audio[0].play()
+	audio_death.shuffle()
+	audio_help.shuffle()
+	
+	chosen_audio = audio[0]
+	chosen_death = audio_death[0]
+	chosen_help = audio_help[0]
+	
+	chosen_audio.play()
 
 func _process(_delta):
 	if velocity != Vector2.ZERO:
@@ -64,10 +80,13 @@ func accoster(player:Player):
 	fuire()
 
 func tuer():
+	chosen_help.stop()
+	chosen_death.play()
 	Var.score+=1
-	queue_free()
 
 func fuire():
+	chosen_audio.stop()
+	chosen_help.play()
 	state = State.Fly
 	set_movement_target(commisariat.global_position)
 	navigation_agent.avoidance_mask += 4
@@ -84,3 +103,6 @@ func _on_navigation_agent_2d_set_up_terminated():
 	navigation_agent.velocity_computed.connect(_on_velocity_computed)
 	if target_entrance:
 		set_movement_target(target_entrance.global_position)
+
+func _on_death_finished():
+	queue_free()
