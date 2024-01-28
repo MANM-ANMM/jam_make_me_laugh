@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://b62yeakaigk0v" path="res://assets/sprites/cop/cop_walk/cop_walk_0023.png" id="26_50oob"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n8t0n"]
-radius = 20.0
+radius = 15.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nnsby"]
 animations = [{
