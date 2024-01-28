@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxnkcu5hgswer"]
+[gd_scene load_steps=4 format=3 uid="uid://dxnkcu5hgswer"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3d0kq"]
 [ext_resource type="PackedScene" uid="uid://dhtenqjiedfo3" path="res://scenes/level.tscn" id="2_re7wd"]
+[ext_resource type="AudioStream" uid="uid://cvn5b0mdq27r" path="res://assets/audio/music/Daggerfall Soundtrack (HQ Remake) - Main Theme (Story).mp3" id="3_6mofu"]
 
 [node name="Main" type="Node2D" node_paths=PackedStringArray("cop_parent")]
 script = ExtResource("1_3d0kq")
 cop_parent = NodePath("Level")
 
 [node name="Level" parent="." instance=ExtResource("2_re7wd")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("3_6mofu")
+volume_db = -27.0
+autoplay = true
