@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cv7nmswd6uikx"]
+[gd_scene load_steps=10 format=3 uid="uid://cv7nmswd6uikx"]
 
 [ext_resource type="Texture2D" uid="uid://bahedaauan4xo" path="res://assets/sprites/civilians/civilian1.png" id="1_cb2oe"]
 [ext_resource type="Script" path="res://scripts/cop_car.gd" id="1_fnvmn"]
@@ -16,6 +16,9 @@ radius = 262.069
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u5le8"]
 radius = 25.02
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_85i0k"]
+radius = 124.258
 
 [node name="Policier" type="CharacterBody2D"]
 script = ExtResource("1_fnvmn")
@@ -55,7 +58,15 @@ shape = SubResource("CircleShape2D_6oquu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EmprisonneurClown"]
 shape = SubResource("CircleShape2D_u5le8")
 
+[node name="DetectionNPC_Fuyants" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionNPC_Fuyants"]
+shape = SubResource("CircleShape2D_85i0k")
+
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
 [connection signal="body_entered" from="DetectionFou" to="." method="_on_detection_fou_body_entered"]
 [connection signal="body_entered" from="DetectionPerteFou" to="." method="_on_detection_perte_fou_body_entered"]
 [connection signal="timeout" from="TimerActualiseTraque" to="." method="_on_timer_actualise_traque_timeout"]
+[connection signal="body_entered" from="DetectionNPC_Fuyants" to="." method="_on_detection_npc_fuyants_body_entered"]

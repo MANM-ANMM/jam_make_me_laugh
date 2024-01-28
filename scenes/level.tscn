@@ -1,18 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://dhtenqjiedfo3"]
+[gd_scene load_steps=15 format=3 uid="uid://dhtenqjiedfo3"]
 
 [ext_resource type="PackedScene" uid="uid://ge6iuqdhaydc" path="res://scenes/player.tscn" id="1_0t2k1"]
 [ext_resource type="PackedScene" uid="uid://dw2ff30pbqo78" path="res://scenes/pnj.tscn" id="2_ppqx5"]
 [ext_resource type="PackedScene" uid="uid://dekm7g07xoaib" path="res://scenes/building.tscn" id="3_wl3fn"]
 [ext_resource type="NavigationPolygon" uid="uid://5qum1p8j44ww" path="res://navpolygon/pnj_polygons.tres" id="4_avuho"]
 [ext_resource type="PackedScene" uid="uid://dq4qagax7essg" path="res://scenes/spawner_npc.tscn" id="5_m3qhq"]
+[ext_resource type="PackedScene" uid="uid://k86bgk6w61i7" path="res://scenes/scenery/bench.tscn" id="6_rbdrm"]
 [ext_resource type="PackedScene" uid="uid://1o547wqr41xw" path="res://scenes/cop_car.tscn" id="7_rir1b"]
+[ext_resource type="PackedScene" uid="uid://ddlt5mnlwfp0i" path="res://scenes/scenery/bush.tscn" id="7_s6hl6"]
+[ext_resource type="PackedScene" uid="uid://dtue2rxjhnosj" path="res://scenes/scenery/sewer_cover.tscn" id="8_ubphw"]
 [ext_resource type="PackedScene" uid="uid://cy6xv7dntq10w" path="res://scenes/commisariat.tscn" id="8_uc22s"]
-[ext_resource type="PackedScene" uid="uid://beunufxd5e0xq" path="res://scenes/street_light.tscn" id="9_wfw0p"]
+[ext_resource type="PackedScene" uid="uid://dehve67a4g1w3" path="res://scenes/scenery/tree.tscn" id="9_q6jsu"]
+[ext_resource type="PackedScene" uid="uid://beunufxd5e0xq" path="res://scenes/scenery/street_light.tscn" id="9_wfw0p"]
 [ext_resource type="PackedScene" uid="uid://ci1eyun88puv4" path="res://scenes/tile_map.tscn" id="10_bhtpm"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_styr4"]
-vertices = PackedVector2Array(558, 528, 1185, 656, -84, 663, 190, 528, 408, 16, 590, 16, 556, 40, 768, 341, 807, 313, 807, 361, 915, 105, 852, 16, 1198, 16, 1175, 105, 1175, 361, 558, 272, 408, 235, 190, 272, 40, 235, -59, 16, 40, 16)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6), PackedInt32Array(7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(13, 12, 1, 14), PackedInt32Array(14, 1, 0, 9), PackedInt32Array(9, 0, 15, 7), PackedInt32Array(6, 7, 15), PackedInt32Array(16, 4, 6, 15), PackedInt32Array(16, 15, 17, 18), PackedInt32Array(19, 20, 18, 2), PackedInt32Array(3, 2, 18, 17)])
+vertices = PackedVector2Array(408, 16, 590, 16, 556, 40, 768, 341, 807, 313, 807, 361, 787, 374, 915, 105, 852, 16, 1198, 16, 1175, 105, 1185, 656, 1175, 361, 880, 465, 873, 426, 873, 510, 408, 235, 558, 272, 744, 382, 725, 401, 723, 399, 723, 327, 558, 327, -59, 16, 40, 16, 40, 235, -84, 663, 693, 541, 712, 521, 748, 551, 832, 551, 837, 382, 190, 272, 190, 528, 568, 551, 516, 528, 529, 541, 787, 558, 654, 551)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2), PackedInt32Array(3, 4, 5, 6), PackedInt32Array(7, 8, 9, 10), PackedInt32Array(10, 9, 11, 12), PackedInt32Array(12, 11, 13, 14), PackedInt32Array(15, 13, 11), PackedInt32Array(16, 0, 2, 17), PackedInt32Array(18, 19, 20, 21), PackedInt32Array(21, 22, 17), PackedInt32Array(23, 24, 25, 26), PackedInt32Array(27, 28, 29), PackedInt32Array(6, 18, 21, 3), PackedInt32Array(30, 15, 11), PackedInt32Array(12, 14, 31), PackedInt32Array(5, 12, 31, 6), PackedInt32Array(2, 3, 21, 17), PackedInt32Array(16, 17, 32, 25), PackedInt32Array(26, 25, 32, 33), PackedInt32Array(11, 26, 33, 34), PackedInt32Array(33, 35, 36), PackedInt32Array(37, 30, 11), PackedInt32Array(38, 27, 29), PackedInt32Array(33, 36, 34), PackedInt32Array(37, 11, 34, 38), PackedInt32Array(37, 38, 29)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-136, -64, 1280, -64, 1264, 736, -168, 744)])
 source_geometry_group_name = &"navigation_polygon_source_group"
 agent_radius = 80.0
@@ -20,7 +24,7 @@ agent_radius = 80.0
 [node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_0t2k1")]
-position = Vector2(237, 235)
+position = Vector2(664, 409)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(1.725, 1.725)
@@ -30,24 +34,46 @@ position = Vector2(881, 65)
 motion_mode = 1
 
 [node name="NavigationRegion2D2" type="NavigationRegion2D" parent="."]
+visible = false
 navigation_polygon = SubResource("NavigationPolygon_styr4")
 navigation_layers = 2
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = ExtResource("4_avuho")
+constrain_avoidance = true
 
-[node name="Batiment" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+[node name="LevelElements" type="Node2D" parent="NavigationRegion2D"]
+
+[node name="Batiment" parent="NavigationRegion2D/LevelElements" instance=ExtResource("3_wl3fn")]
 position = Vector2(224, 107)
 
-[node name="Batiment3" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+[node name="Batiment3" parent="NavigationRegion2D/LevelElements" instance=ExtResource("3_wl3fn")]
 position = Vector2(991, 233)
 
-[node name="Batiment2" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+[node name="Batiment2" parent="NavigationRegion2D/LevelElements" instance=ExtResource("3_wl3fn")]
 position = Vector2(374, 400)
 
-[node name="Batiment4" parent="NavigationRegion2D" instance=ExtResource("3_wl3fn")]
+[node name="Batiment4" parent="NavigationRegion2D/LevelElements" instance=ExtResource("3_wl3fn")]
 position = Vector2(766, 116)
 rotation = -2.1893
+
+[node name="Scenery" type="Node2D" parent="NavigationRegion2D/LevelElements"]
+
+[node name="Street light" parent="NavigationRegion2D/LevelElements/Scenery" instance=ExtResource("9_wfw0p")]
+position = Vector2(501, 372)
+
+[node name="Bench" parent="NavigationRegion2D/LevelElements/Scenery" instance=ExtResource("6_rbdrm")]
+position = Vector2(610, 422)
+rotation = -3.14159
+
+[node name="Bush" parent="NavigationRegion2D/LevelElements/Scenery" instance=ExtResource("7_s6hl6")]
+position = Vector2(611, 455)
+
+[node name="SewerCover" parent="NavigationRegion2D/LevelElements/Scenery" instance=ExtResource("8_ubphw")]
+position = Vector2(704, 394)
+
+[node name="Tree" parent="NavigationRegion2D/LevelElements/Scenery" instance=ExtResource("9_q6jsu")]
+position = Vector2(788, 466)
 
 [node name="SpawnerNPC" parent="." instance=ExtResource("5_m3qhq")]
 
@@ -62,9 +88,6 @@ position = Vector2(464, 16)
 
 [node name="Commisariat" parent="." instance=ExtResource("8_uc22s")]
 position = Vector2(1176, 649)
-
-[node name="Street light" parent="." instance=ExtResource("9_wfw0p")]
-position = Vector2(501, 372)
 
 [node name="TileMap" parent="." instance=ExtResource("10_bhtpm")]
 z_index = -1
