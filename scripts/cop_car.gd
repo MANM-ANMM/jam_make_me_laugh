@@ -9,6 +9,12 @@ enum State {
 	Traque
 }
 
+
+func _ready():
+	var ani:=get_node_or_null("AnimatedSprite2D")
+	if ani:
+		ani.play()
+
 var state : State = State.Normal :
 	set(value):
 		if value == state: return

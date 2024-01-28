@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ibkxyht22qip"
-path="res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"
+uid="uid://bchljtef6puh0"
+path="res://.godot/imported/joggeuse_mouth_s.png-9b05638f36139c885fa4ca0fdeb4ebab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cop/cop.png"
-dest_files=["res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"]
+source_file="res://assets/sprites/profils/joggeuse_mouth_s.png"
+dest_files=["res://.godot/imported/joggeuse_mouth_s.png-9b05638f36139c885fa4ca0fdeb4ebab.ctex"]
 
 [params]
 

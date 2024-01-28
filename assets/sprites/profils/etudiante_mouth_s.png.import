@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ibkxyht22qip"
-path="res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"
+uid="uid://cai3j0gvsktmk"
+path="res://.godot/imported/etudiante_mouth_s.png-89e65188b5f49d6283b09bbf52d89645.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cop/cop.png"
-dest_files=["res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"]
+source_file="res://assets/sprites/profils/etudiante_mouth_s.png"
+dest_files=["res://.godot/imported/etudiante_mouth_s.png-89e65188b5f49d6283b09bbf52d89645.ctex"]
 
 [params]
 
