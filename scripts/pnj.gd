@@ -12,6 +12,8 @@ var audio_help
 var chosen_audio
 var chosen_death
 var chosen_help
+var scene
+var instance
 
 enum State {
 	Normal,
@@ -22,6 +24,7 @@ var state : State = State.Normal
 @onready var animated_sprite := $AnimatedSprite2D
 
 func _ready():
+	scene = preload("res://scenes/death.tscn")
 	match $Joke.profile:
 		'Lilian':
 			animated_sprite.play('WalkLilianne')
@@ -81,9 +84,11 @@ func accoster(player:Player):
 
 func tuer():
 	chosen_help.stop()
-	chosen_death.play()
-	animated_sprite.stop()
 	Var.score+=1
+	instance = scene.instantiate()
+	instance.global_position = self.global_position
+	add_sibling(instance)
+	queue_free()
 
 func fuire():
 	chosen_audio.stop()

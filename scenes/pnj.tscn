@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dw2ff30pbqo78"]
+[gd_scene load_steps=14 format=3 uid="uid://dw2ff30pbqo78"]
 
 [ext_resource type="Script" path="res://scripts/pnj.gd" id="1_1ypm5"]
 [ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="2_thgto"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://cmnuvm3ipcsv6" path="res://assets/audio/sounds/help.mp3" id="8_tdfld"]
 [ext_resource type="AudioStream" uid="uid://i76hkfqcvu8b" path="res://assets/audio/sounds/ayuda.mp3" id="9_fe70x"]
 [ext_resource type="AudioStream" uid="uid://ctbpbgweojlny" path="res://assets/audio/sounds/Death3.mp3" id="9_r8ryi"]
+[ext_resource type="AudioStream" uid="uid://cwl5vv04hyfkn" path="res://assets/audio/sounds/death1.mp3" id="11_3c1mp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eus3o"]
 radius = 15.0
@@ -71,13 +72,11 @@ volume_db = 20.0
 max_distance = 100.0
 
 [node name="Death" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_r8ryi")
-volume_db = 15.0
+stream = ExtResource("11_3c1mp")
 max_distance = 100.0
 
 [node name="Death2" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_r8ryi")
-volume_db = 15.0
+stream = ExtResource("11_3c1mp")
 max_distance = 100.0
 
 [node name="Death3" type="AudioStreamPlayer2D" parent="."]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://1o547wqr41xw"]
 
 [ext_resource type="Script" path="res://scripts/cop_car.gd" id="1_5d7p2"]
-[ext_resource type="PackedScene" uid="uid://dosynjw3twuh0" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
+[ext_resource type="PackedScene" path="res://scenes/flashing_light.tscn" id="1_v8n2l"]
 [ext_resource type="Texture2D" uid="uid://btfewectddc6e" path="res://assets/sprites/car/car.png" id="2_geuxy"]
 [ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="3_yu5hw"]
-[ext_resource type="PackedScene" uid="uid://dsw1fqwwmb28v" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
+[ext_resource type="PackedScene" path="res://scenes/emprisonneur_clown.tscn" id="5_bgkr5"]
 [ext_resource type="Texture2D" uid="uid://cvlnuhx4bvvt7" path="res://assets/sprites/60°_light_cone.png" id="6_l7eap"]
 [ext_resource type="AudioStream" uid="uid://dh88ta6dxo4ss" path="res://assets/audio/sounds/copCarSiren.mp3" id="7_onex2"]
 
