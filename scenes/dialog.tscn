@@ -9,14 +9,9 @@ position = Vector2(570, 308)
 script = ExtResource("1_s6hvb")
 
 [node name="Profile" parent="." instance=ExtResource("2_1n2tf")]
+position = Vector2(26, 36)
+scale = Vector2(1.68, 1.68)
 eye_radius = 20
-
-[node name="Label" type="Label" parent="."]
-offset_left = -58.0
-offset_top = -292.0
-offset_right = 14.0
-offset_bottom = -268.0
-text = "try ZQSD"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(6, 20)
