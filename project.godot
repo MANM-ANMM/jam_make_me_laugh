@@ -23,6 +23,10 @@ config/icon="res://assets/sprites/clown.png"
 BusEvent="*res://scripts/BusEvent.gd"
 Var="*res://scripts/Var.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 move_left={
