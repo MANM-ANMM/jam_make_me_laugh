@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8vf2456poo8w"]
 
 [ext_resource type="Script" path="res://scripts/profile.gd" id="1_5wopq"]
-[ext_resource type="Texture2D" uid="uid://cyydysyr07si4" path="res://assets/sprites/profils/joggeuse_base.png" id="2_madsy"]
+[ext_resource type="Texture2D" uid="uid://elxijiobglkd" path="res://assets/sprites/profils/blaze_base.png" id="2_78cvh"]
 [ext_resource type="Texture2D" uid="uid://c80h2x1et1hun" path="res://assets/sprites/profils/profil1_pupils.png" id="3_41x8v"]
 [ext_resource type="Texture2D" uid="uid://bwo0r7oqnb8lv" path="res://assets/sprites/profils/profil1_mouth_o.png" id="4_pp6sr"]
 [ext_resource type="Texture2D" uid="uid://b35q4n3gjgx0a" path="res://assets/sprites/profils/profil1_mouth_s.png" id="5_3wn5c"]
@@ -10,7 +10,7 @@
 script = ExtResource("1_5wopq")
 
 [node name="Face" type="Sprite2D" parent="."]
-texture = ExtResource("2_madsy")
+texture = ExtResource("2_78cvh")
 
 [node name="Pupils" type="Sprite2D" parent="."]
 texture = ExtResource("3_41x8v")
