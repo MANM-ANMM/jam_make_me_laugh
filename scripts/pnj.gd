@@ -21,7 +21,11 @@ func _ready():
 			animated_sprite.play('WalkLilianne')
 		_:
 			animated_sprite.play('Walk0')
+	
 	animated_sprite.speed_scale = 0.0
+	var audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
+	audio.shuffle()
+	audio[0].play()
 
 func _process(_delta):
 	if velocity != Vector2.ZERO:

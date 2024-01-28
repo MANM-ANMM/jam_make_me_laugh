@@ -9,6 +9,7 @@ const SPEED = 120.0
 func _ready():
 	animated_sprite.play()
 	animated_sprite.speed_scale = 0.0
+	$Vengeance.play()
 
 func _process(_delta):
 	if velocity != Vector2.ZERO:
@@ -40,5 +41,10 @@ func move():
 	move_and_slide()
 
 func lose():
-	
 	get_tree().change_scene_to_file.call_deferred("res://scenes/ending.tscn")
+
+func _on_timer_timeout():
+	$Vengeance.play()
+
+func _on_vengeance_finished():
+	$Timer.start()

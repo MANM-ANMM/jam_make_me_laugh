@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cckuqvtwkwgkr"]
+
+[ext_resource type="TileSet" uid="uid://c58n5g3c1yi56" path="res://assets/sprites/scenery/batiment_tile_set.tres" id="2_hdxjq"]
+[ext_resource type="PackedScene" uid="uid://cy6xv7dntq10w" path="res://scenes/commisariat.tscn" id="2_j6o3k"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pt8al"]
+polygon = PackedVector2Array(107, 64, 107, -64, -21, -64, -21, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va8jb"]
+size = Vector2(129, 128.5)
+
+[node name="Comissariat" type="StaticBody2D"]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_pt8al")
+
+[node name="TileMap" type="TileMap" parent="."]
+light_mask = 2
+z_index = 2
+scale = Vector2(0.214, 0.214)
+tile_set = ExtResource("2_hdxjq")
+format = 2
+layer_0/tile_data = PackedInt32Array(131076, 131072, 9, 131075, 65536, 9, 131074, 65536, 9, 131073, 65536, 9, 131072, 65536, 9, 196607, 0, 9, -65537, 0, 8, -1, 0, 8, 65535, 0, 8, 131071, 0, 8, -131072, 65536, 8, -65536, 65536, 8, 0, 65536, 8, 65536, 65536, 8, -131071, 65536, 8, -65535, 262144, 7, 1, 262144, 8, 65537, 262144, 9, -131070, 65536, 8, -65534, 327680, 7, 2, 327680, 8, 65538, 327680, 9, -131069, 65536, 8, -65533, 393216, 7, 3, 393216, 8, 65539, 393216, 9, -131068, 131072, 8, -65532, 131072, 8, 4, 131072, 8, 65540, 131072, 8, -196608, 65536, 7, -196607, 65536, 7, -196606, 65536, 7, -196605, 65536, 7, -196604, 131072, 7, -131073, 0, 7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(42.5, 0.25)
+shape = SubResource("RectangleShape2D_va8jb")
+
+[node name="Commisariat" parent="." instance=ExtResource("2_j6o3k")]
+position = Vector2(21, 75)

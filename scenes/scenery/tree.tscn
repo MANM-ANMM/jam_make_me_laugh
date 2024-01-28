@@ -6,7 +6,7 @@
 radius = 11.0
 
 [node name="Tree" type="StaticBody2D"]
-z_index = 1
+z_index = 10
 
 [node name="Tree" type="Sprite2D" parent="."]
 scale = Vector2(0.4, 0.4)
