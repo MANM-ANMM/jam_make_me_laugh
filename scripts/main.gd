@@ -3,12 +3,15 @@ extends Node2D
 var scene
 var instance
 
+@export var cop_parent:Node2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	scene = preload("res://scenes/dialog.tscn")
 	BusEvent.dialog.connect(_on_dialog)
 	BusEvent.end_dialog.connect(_on_end_dialog)
 	Var.score = 0
+	BusEvent.i_am_a_commisariat.connect(func(c): c.cop_parent = cop_parent)
 
 func _on_dialog(_profile, _joke):
 	$Level/Player/Camera2D.enabled = false
