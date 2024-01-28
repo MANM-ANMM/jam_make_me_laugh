@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dw2ff30pbqo78"]
+[gd_scene load_steps=13 format=3 uid="uid://dw2ff30pbqo78"]
 
 [ext_resource type="Script" path="res://scripts/pnj.gd" id="1_1ypm5"]
 [ext_resource type="Script" path="res://scripts/navigation_agent_basic.gd" id="2_thgto"]
@@ -7,6 +7,10 @@
 [ext_resource type="AudioStream" uid="uid://bpjkjy3wu0a6i" path="res://assets/audio/sounds/SpaceGuiltySon.mp3" id="5_ctxp6"]
 [ext_resource type="AudioStream" uid="uid://16bsbpecnf21" path="res://assets/audio/sounds/SpaceIAmInSpace.mp3" id="6_8mf7n"]
 [ext_resource type="AudioStream" uid="uid://cutbnu0uuc026" path="res://assets/audio/sounds/SpaceSecret.mp3" id="7_flh8p"]
+[ext_resource type="AudioStream" uid="uid://d0s3yr48lasgw" path="res://assets/audio/sounds/Alaide.mp3" id="8_crp7i"]
+[ext_resource type="AudioStream" uid="uid://cmnuvm3ipcsv6" path="res://assets/audio/sounds/help.mp3" id="8_tdfld"]
+[ext_resource type="AudioStream" uid="uid://i76hkfqcvu8b" path="res://assets/audio/sounds/ayuda.mp3" id="9_fe70x"]
+[ext_resource type="AudioStream" uid="uid://ctbpbgweojlny" path="res://assets/audio/sounds/Death3.mp3" id="9_r8ryi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eus3o"]
 radius = 15.0
@@ -35,7 +39,7 @@ shape = SubResource("CircleShape2D_eus3o")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.065, 0.065)
 sprite_frames = ExtResource("5_0t3sa")
-animation = &"WalkLilianne"
+animation = &"Walk0"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_ctxp6")
@@ -52,4 +56,36 @@ stream = ExtResource("7_flh8p")
 volume_db = -5.0
 max_distance = 100.0
 
+[node name="Help" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_tdfld")
+volume_db = 5.0
+max_distance = 100.0
+
+[node name="Ayuda" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_fe70x")
+max_distance = 100.0
+
+[node name="Alaide" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_crp7i")
+volume_db = 20.0
+max_distance = 100.0
+
+[node name="Death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_r8ryi")
+volume_db = 15.0
+max_distance = 100.0
+
+[node name="Death2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_r8ryi")
+volume_db = 15.0
+max_distance = 100.0
+
+[node name="Death3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_r8ryi")
+volume_db = 15.0
+max_distance = 100.0
+
 [connection signal="set_up_terminated" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_set_up_terminated"]
+[connection signal="finished" from="Death" to="." method="_on_death_finished"]
+[connection signal="finished" from="Death2" to="." method="_on_death_finished"]
+[connection signal="finished" from="Death3" to="." method="_on_death_finished"]

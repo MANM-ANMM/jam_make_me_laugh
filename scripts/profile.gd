@@ -7,10 +7,16 @@ signal speak_ends
 signal flee_ends
 
 #childs
-@onready var node_face = $Face
-@onready var node_pupils = $Pupils
-@onready var node_mouth_s = $MouthS
-@onready var node_mouth_o = $MouthO
+var node_face
+var node_pupils
+var node_mouth_s
+var node_mouth_o
+
+var face : Texture2D
+var pupils : Texture2D
+var mouth_o : Texture2D
+var mouth_s : Texture2D
+
 
 
 var eye_dest := Vector2.ZERO
@@ -34,7 +40,17 @@ var word_progress := speak_speed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
+	
+func init_sprites():
+	node_face = $Face
+	node_mouth_s = $MouthS
+	node_mouth_o = $MouthO
+	node_pupils = $Pupils
+	node_mouth_s.texture = mouth_s
+	node_mouth_o.texture = mouth_o
+	node_face.texture = face
+	node_pupils.texture = pupils
 	
 func _set_from_angle(angle : float):
 	eye_dest.x = cos(angle) * eye_radius

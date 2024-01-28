@@ -37,7 +37,9 @@ func _physics_process(_delta):
 
 func move_normal():
 	if navigation_agent.is_navigation_finished():
-		set_movement_target(Vector2(randf_range(0, 1000.0), randf_range(0, 600.0)))
+		var destination := Vector2(randf_range(-646, 2188.0), randf_range(-289.0, 1819.0))
+		var dest = NavigationServer2D.map_get_closest_point(navigation_agent.get_navigation_map(), destination)
+		set_movement_target(dest)
 		return
 	
 	

@@ -22,6 +22,7 @@ func _on_dialog(_profile, _joke):
 	instance = scene.instantiate()
 	instance.profile = _profile
 	instance.joke = _joke
+	instance.init()
 	add_child(instance)
 	
 func _on_end_dialog():
