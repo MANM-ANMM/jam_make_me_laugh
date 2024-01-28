@@ -15,6 +15,7 @@ light_mask = 2
 texture = ExtResource("1_4dlgu")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(55, 0)
 color = Color(1, 0.72549, 0.278431, 1)
 energy = 0.3
 shadow_enabled = true
