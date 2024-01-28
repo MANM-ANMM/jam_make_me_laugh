@@ -39,7 +39,7 @@ shape = SubResource("CircleShape2D_eus3o")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.065, 0.065)
 sprite_frames = ExtResource("5_0t3sa")
-animation = &"Walk0"
+animation = &"Geek"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_ctxp6")

@@ -21,13 +21,8 @@ enum State {
 var state : State = State.Normal
 @onready var animated_sprite := $AnimatedSprite2D
 
-func _ready():
-	match $Joke.profile:
-		'Lilian':
-			animated_sprite.play('WalkLilianne')
-		_:
-			animated_sprite.play('Walk0')
-	
+func _ready():#'Geek', 'Martin', 'Lilian', 'Mamie'
+	set_anim.call_deferred()
 	animated_sprite.speed_scale = 0.0
 	audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
 	audio_death = [get_node("Death"), get_node("Death2"), get_node("Death3")]
@@ -42,6 +37,10 @@ func _ready():
 	chosen_help = audio_help[0]
 	
 	chosen_audio.play()
+
+func set_anim():
+	animated_sprite.play($Joke.profile)
+	
 
 func _process(_delta):
 	if velocity != Vector2.ZERO:
