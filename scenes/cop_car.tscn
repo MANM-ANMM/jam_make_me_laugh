@@ -42,6 +42,7 @@ navigation_layers = 2
 avoidance_enabled = true
 radius = 50.0
 time_horizon_obstacles = 0.2
+max_speed = 140.0
 script = ExtResource("3_yu5hw")
 
 [node name="DetectionFou" type="Area2D" parent="."]
