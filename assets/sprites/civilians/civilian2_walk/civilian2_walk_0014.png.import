@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfd3a4i1tipw6"
-path="res://.godot/imported/joggeuse.png-16cd82011383227093107c048c437f07.ctex"
+uid="uid://pe27d861txjm"
+path="res://.godot/imported/civilian2_walk_0014.png-59ce4d04a76e390c637db216ef373eb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/profils/joggeuse.png"
-dest_files=["res://.godot/imported/joggeuse.png-16cd82011383227093107c048c437f07.ctex"]
+source_file="res://assets/sprites/civilians/civilian2_walk/civilian2_walk_0014.png"
+dest_files=["res://.godot/imported/civilian2_walk_0014.png-59ce4d04a76e390c637db216ef373eb5.ctex"]
 
 [params]
 

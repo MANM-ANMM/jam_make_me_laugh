@@ -18,15 +18,29 @@ func init():
 			character.pupils = null
 			character.mouth_o = preload("res://assets/sprites/profils/geek_mouth_o.png")
 			character.mouth_s = preload("res://assets/sprites/profils/geek_mouth_s.png")
+			character.position = Vector2(20, -13)
+			character.scale = Vector2(0.6, 0.6)
 		'Martin':
-			pass
+			character.face = preload("res://assets/sprites/profils/joggeuse_base.png")
+			character.pupils = null
+			character.mouth_o = preload("res://assets/sprites/profils/joggeuse_mouth_o.png")
+			character.mouth_s = preload("res://assets/sprites/profils/joggeuse_mouth_s.png")
+			character.position = Vector2(17, 7)
+			character.scale = Vector2(0.427, .427)
 		'Lilian':
-			pass
+			character.face = preload("res://assets/sprites/profils/profil1_base.png")
+			character.pupils = null
+			character.mouth_o = preload("res://assets/sprites/profils/profil1_mouth_o.png")
+			character.mouth_s = preload("res://assets/sprites/profils/profil1_mouth_s.png")
+			character.position = Vector2(26, 36)
+			character.scale = Vector2(1.68, 1.68)
 		'Mamie':
 			character.face = preload("res://assets/sprites/profils/mamie_base.png")
 			character.pupils = null
 			character.mouth_o = preload("res://assets/sprites/profils/mamie_mouth_o.png")
 			character.mouth_s = preload("res://assets/sprites/profils/mamie_mouth_s.png")
+			character.position = Vector2(26, 36)
+			character.scale = Vector2(1.68, 1.68)
 	print(character.face)
 	character.init_sprites()
 

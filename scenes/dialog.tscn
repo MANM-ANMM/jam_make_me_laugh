@@ -9,8 +9,8 @@ position = Vector2(570, 308)
 script = ExtResource("1_s6hvb")
 
 [node name="Profile" parent="." instance=ExtResource("2_1n2tf")]
-position = Vector2(26, 36)
-scale = Vector2(1.68, 1.68)
+position = Vector2(17, 7)
+scale = Vector2(0.426554, 0.426554)
 eye_radius = 20
 
 [node name="Camera2D" type="Camera2D" parent="."]
