@@ -69,3 +69,8 @@ func _on_timer_actualise_traque_timeout():
 
 func _on_detection_perte_fou_body_entered(_body):
 	state = State.Normal
+
+
+func _on_detection_npc_fuyants_body_entered(body):
+	if state != State.Traque:
+		set_movement_target(body.derniere_position_clown)

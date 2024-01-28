@@ -8,6 +8,7 @@ func _ready():
 	scene = preload("res://scenes/dialog.tscn")
 	BusEvent.dialog.connect(_on_dialog)
 	BusEvent.end_dialog.connect(_on_end_dialog)
+	Var.score = 0
 
 func _on_dialog(_profile, _joke):
 	$Level/Player/Camera2D.enabled = false

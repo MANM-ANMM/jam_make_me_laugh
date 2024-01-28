@@ -27,6 +27,10 @@ driver/enable_input=true
 BusEvent="*res://scripts/BusEvent.gd"
 Var="*res://scripts/Var.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 move_left={
@@ -83,6 +87,7 @@ locale/translations=PackedStringArray("res://translations/Translations.csv", "re
 2d_physics/layer_2="Player"
 2d_physics/layer_3="NPC"
 2d_physics/layer_4="Police"
+2d_physics/layer_5="NPC_En_Fuite"
 avoidance/layer_1="all"
 avoidance/layer_2="player"
 avoidance/layer_3="player_big"
