@@ -82,6 +82,7 @@ func accoster(player:Player):
 func tuer():
 	chosen_help.stop()
 	chosen_death.play()
+	animated_sprite.stop()
 	Var.score+=1
 
 func fuire():
