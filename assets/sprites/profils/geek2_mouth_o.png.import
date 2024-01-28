@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ibkxyht22qip"
-path="res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"
+uid="uid://bwryfbc2qgilc"
+path="res://.godot/imported/geek2_mouth_o.png-484016ad287dda5097e913ad3e9578e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/cop/cop.png"
-dest_files=["res://.godot/imported/cop.png-6bfa6daadf0c739bbe6728bd92e334d2.ctex"]
+source_file="res://assets/sprites/profils/geek2_mouth_o.png"
+dest_files=["res://.godot/imported/geek2_mouth_o.png-484016ad287dda5097e913ad3e9578e0.ctex"]
 
 [params]
 

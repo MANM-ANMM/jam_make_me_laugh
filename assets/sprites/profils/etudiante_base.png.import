@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfd3a4i1tipw6"
-path="res://.godot/imported/joggeuse.png-16cd82011383227093107c048c437f07.ctex"
+uid="uid://bfq7353b8t8gk"
+path="res://.godot/imported/etudiante_base.png-7db44c6918fcb27b45274554067702e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/profils/joggeuse.png"
-dest_files=["res://.godot/imported/joggeuse.png-16cd82011383227093107c048c437f07.ctex"]
+source_file="res://assets/sprites/profils/etudiante_base.png"
+dest_files=["res://.godot/imported/etudiante_base.png-7db44c6918fcb27b45274554067702e2.ctex"]
 
 [params]
 
