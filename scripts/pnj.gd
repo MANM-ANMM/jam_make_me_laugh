@@ -23,12 +23,8 @@ var state : State = State.Normal
 
 func _ready():
 	scene = preload("res://scenes/death.tscn")
-	match $Joke.profile:
-		'Lilian':
-			animated_sprite.play('WalkLilianne')
-		_:
-			animated_sprite.play('Walk0')
-	
+
+	set_anim.call_deferred()
 	animated_sprite.speed_scale = 0.0
 	audio = [get_node("AudioStreamPlayer2D"), get_node('AudioStreamPlayer2D2'), get_node('AudioStreamPlayer2D3')]
 	audio_help = [get_node("Alaide"), get_node("Ayuda"), get_node("Help")]
@@ -40,6 +36,10 @@ func _ready():
 	chosen_help = audio_help[0]
 	
 	chosen_audio.play()
+
+func set_anim():
+	animated_sprite.play($Joke.profile)
+	
 
 func _process(_delta):
 	if velocity != Vector2.ZERO:
