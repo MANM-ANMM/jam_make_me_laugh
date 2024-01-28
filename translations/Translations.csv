@@ -15,11 +15,13 @@ GEEK_4,The problem with SSL jokes is that you must get someone else to vouch for
 Parce qu'ils ont une Gygabyte."
 GEEK_5,"The SYN flood attack: ""knock knock. who's there? knock knock. who's there? knock knock. who's there? …","L'attaque SYN: ""toc toc. Qui est là? toc toc. Qui est là? toc toc. Qui est là? …"
 GEEK_6,404 joke not found.,404 blague introuvable.
-GEEK_7,The punchline often arrives before the set-up. Do you know the problem with UDP jokes?,"La chute arrive avant le reste. 
+GEEK_7,"The punchline often arrives before the set-up. 
+Do you know the problem with UDP jokes?","La chute arrive avant le reste. 
 Tu connais le problème des blagues UDP ?"
-GEEK_8,What made the Java developers wear glasses?... They can't C.,"Tu sais pourquoi l'iPhone 6 se plie ? 
+GEEK_8,"What made the Java developers wear glasses? 
+They can't C.","Tu sais pourquoi l'iPhone 6 se plie ? 
 Parce que l'Apple Store."
-GEEK_9,I took a Microsoft Office class in high school… I Excelled in it !,J'ai pris des cours de Microsoft Office. J'y excelle !
+GEEK_9,I took a Microsoft Office class in high school. I Excelled in it !,J'ai pris des cours de Microsoft Office. J'y excelle !
 GEEK_10,"Yo momma so big, she’s got her own OSI layer between L3 and L4, because the Transport layer can’t handle her.","Ta mère est si grosse qu'elle à sa propre couche OSI entre L3 et L4, parce que la couche transport ne peut pas la supporter."
 GEEK_11,Yo mamma is so fat that she sat on a binary tree and made it a linked list in constant time.,"A quoi sert Internet Explorer ? 
 A télécharger Google Chrome. "
@@ -28,6 +30,8 @@ GEEK_13,You are so stupid your intellisence on Visual Studio gave up.,"Pourquoi 
 A cause des pare-feux. "
 GEEK_14,What do you call a fat computer? A big mac!,Un geek ne descend pas du métro. Il libère la RAM...
 GEEK_15,There are only 10 types of people in the world : those who understand binary and those who don’t.,Il y a 10 types de personnes dans le monde : ceux qui comprennent le binaire et les autres
+GEEK_16,"Why do astronauts use Linux? 
+Because they can't open Windows in space !","Un geek n'a pas besoin de vaccin, il a déjà un anti-virus !"
 LILIAN_0,"- I have a good and a bad news.
 - The good one ?
 - I found a golden ring.
@@ -38,7 +42,11 @@ LILIAN_0,"- I have a good and a bad news.
 - La mauvaise ? 
 - On part pour le Mordor."
 LILIAN_1,I know how to exit vim.,Je sais quitter vim.
-MARTIN_0,,"T'aimes bien SCRATCH ? 
+LILIAN_2,"Yo momma so big that when Legolas dispatched her, Gimli counted it as 2","Ta mère est tellement grosse que quand Legolas lui a réglé son compte, Gimli l'a compté pour 2."
+LILIAN_3,Yo momma so big that everywhere she goes orcs follow her chanting ''Grond Grond''.,Ta mère est si grosse que partout où elle va les orcs la suivent en scandant ''Grond Grond''
+LILIAN_4,Gandalf : Yo momma so big I had to let her pass.,Gandalf : Ta mère est tellement grosse que j'ai du la laisser passer.
+LILIAN_5,"Yo momma so stupid, you owe Peregrin Took an apology.",Ta mère est si stupide que tu dois des excuses à Peregrin Took.
+MARTIN_0,"I once had a pencil that was owned by William Shakespeare, he chewed it a lot, so I couldn't tell if it was a 2B or not 2B.","T'aimes bien SCRATCH ? 
 Non, je préfère les lacets"
 MARTIN_1,,"- On met quoi comme police pour le titre ?
 - Roxane"
@@ -63,7 +71,7 @@ MARTIN_13,,"- Est ce qu'on kangourou peut sauter plus haut qu'une maison ?
 MARTIN_14,,"J’ai une blague sur les magasins, mais elle n’a pas supermarché."
 MARTIN_15,,"Que fait une fraise sur un cheval ? 
 Tagada tagada…"
-MAMIE_0,,"Un enfant dit ""Maman, maman, je ne veux plus dormir avec mamie"". Sa mère lui répond : ""je sais bien mon chéri, mais tu sais bien qu'on n'a pas assez de sous pour l'enterrer"""
+MAMIE_0,I like people the way I like my tea. In a bag under water,"Un enfant dit ""Maman, maman, je ne veux plus dormir avec mamie"". Sa mère lui répond : ""je sais bien mon chéri, mais tu sais bien qu'on n'a pas assez de sous pour l'enterrer"""
 MAMIE_1,,"Maman, il y a quelqu'un à la porte qui fait la collecte pour la maison de retraite.
 Je peux lui donner grand-mère ? "
 MAMIE_2,,"Un homme vient de mourir.

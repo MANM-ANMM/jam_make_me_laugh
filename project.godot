@@ -18,10 +18,18 @@ boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/image="res://assets/sprites/clown.png"
 config/icon="res://assets/sprites/clown.png"
 
+[audio]
+
+driver/enable_input=true
+
 [autoload]
 
 BusEvent="*res://scripts/BusEvent.gd"
 Var="*res://scripts/Var.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 
@@ -79,6 +87,7 @@ locale/translations=PackedStringArray("res://translations/Translations.csv", "re
 2d_physics/layer_2="Player"
 2d_physics/layer_3="NPC"
 2d_physics/layer_4="Police"
+2d_physics/layer_5="NPC_En_Fuite"
 avoidance/layer_1="all"
 avoidance/layer_2="player"
 avoidance/layer_3="player_big"
