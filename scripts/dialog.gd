@@ -52,20 +52,19 @@ func init():
 			character.position = Vector2(37, 52)
 			character.scale = Vector2(0.456, 0.456)
 		'Mamie':
-			if (randi_range(0,1) == 0):
-				character.face = preload("res://assets/sprites/profils/mamie_base.png")
-				character.pupils = null
-				character.mouth_o = preload("res://assets/sprites/profils/mamie_mouth_o.png")
-				character.mouth_s = preload("res://assets/sprites/profils/mamie_mouth_s.png")
-				character.position = Vector2(26, 36)
-				character.scale = Vector2(1.68, 1.68)
-			else:
-				character.face = preload("res://assets/sprites/profils/collegien_base.png")
-				character.pupils = null			
-				character.mouth_o = preload("res://assets/sprites/profils/collegien_mouth_o.png")
-				character.mouth_s = null
-				character.position = Vector2(10, 107)
-				character.scale = Vector2(.277, .277)
+			character.face = preload("res://assets/sprites/profils/mamie_base.png")
+			character.pupils = null
+			character.mouth_o = preload("res://assets/sprites/profils/mamie_mouth_o.png")
+			character.mouth_s = preload("res://assets/sprites/profils/mamie_mouth_s.png")
+			character.position = Vector2(26, 36)
+			character.scale = Vector2(1.68, 1.68)
+		'Enfant':
+			character.face = preload("res://assets/sprites/profils/collegien_base.png")
+			character.pupils = null			
+			character.mouth_o = preload("res://assets/sprites/profils/collegien_mouth_o.png")
+			character.mouth_s = null
+			character.position = Vector2(10, 107)
+			character.scale = Vector2(.277, .277)
 	print(character.face)
 	character.init_sprites()
 
