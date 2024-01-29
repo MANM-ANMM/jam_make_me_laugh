@@ -30,20 +30,12 @@ func init():
 				character.scale = Vector2(0.362, 0.362)
 				
 		'Martin':
-			if (randi_range(0, 1) == 0):
-				character.face = preload("res://assets/sprites/profils/joggeuse_base.png")
-				character.pupils = null
-				character.mouth_o = preload("res://assets/sprites/profils/joggeuse_mouth_o.png")
-				character.mouth_s = preload("res://assets/sprites/profils/joggeuse_mouth_s.png")
-				character.position = Vector2(17, 7)
-				character.scale = Vector2(0.427, .427)
-			else:
-				character.face = preload("res://assets/sprites/profils/etudiante_base.png")
-				character.pupils = null			
-				character.mouth_o = null
-				character.mouth_s = preload("res://assets/sprites/profils/etudiante_mouth_s.png")
-				character.position = Vector2(15, 71)
-				character.scale = Vector2(0.362, 0.362)
+			character.face = preload("res://assets/sprites/profils/etudiante_base.png")
+			character.pupils = null			
+			character.mouth_o = null
+			character.mouth_s = preload("res://assets/sprites/profils/etudiante_mouth_s.png")
+			character.position = Vector2(15, 71)
+			character.scale = Vector2(0.362, 0.362)
 		'Lilian':
 			character.face = preload("res://assets/sprites/profils/blaze_base.png")
 			character.pupils = null			
@@ -65,6 +57,13 @@ func init():
 			character.mouth_s = null
 			character.position = Vector2(10, 107)
 			character.scale = Vector2(.277, .277)
+		'Jogger':
+			character.face = preload("res://assets/sprites/profils/joggeuse_base.png")
+			character.pupils = null
+			character.mouth_o = preload("res://assets/sprites/profils/joggeuse_mouth_o.png")
+			character.mouth_s = preload("res://assets/sprites/profils/joggeuse_mouth_s.png")
+			character.position = Vector2(17, 7)
+			character.scale = Vector2(0.427, .427)
 	print(character.face)
 	character.init_sprites()
 
