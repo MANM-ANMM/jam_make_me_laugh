@@ -133,84 +133,79 @@ MAMIE_14,Ta mère est tellement vieille qu’elle a écrit la préface de la Bib
 MAMIE_15,"Quelle est la différence entre un vieux et un renard ?
 Le renard a la queue touffue et le vieux a la queue foutue !","Quelle est la différence entre un vieux et un renard ?
 Le renard a la queue touffue et le vieux a la queue foutue !"
-ENFANT_0,"La maman de Toto regarde le cahier de devoir de son fils :
-- Qu’est-ce que tu écris mal ! Tu ne pourrais pas écrire plus gros ?
-- Ah non. Quand j’écris trop gros, la maîtresse voit toutes les fautes.","La maman de Toto regarde le cahier de devoir de son fils :
+ENFANT_0,"Teacher: ""How far have you gone with your homework Johnny?""
+Little Johnny: ""About 8 kilometers miss. I went home with it and came back with it this morning.""","La maman de Toto regarde le cahier de devoir de son fils :
 - Qu’est-ce que tu écris mal ! Tu ne pourrais pas écrire plus gros ?
 - Ah non. Quand j’écris trop gros, la maîtresse voit toutes les fautes."
-ENFANT_1,"La maîtresse demande à Toto :
-- Qu'est-ce que tu voudrais faire plus tard ?
-- J’aimerais être Père Noël comme ça, je ne travaillerais qu’une fois par an, répond Toto.","La maîtresse demande à Toto :
+ENFANT_1,"Teacher: ""What a strange pair of socks Johnny, one of your socks is green and the other is red.""
+Johnny: ""Yes, it is very strange. I have another pair at home exactly the same.""","La maîtresse demande à Toto :
 - Qu'est-ce que tu voudrais faire plus tard ?
 - J’aimerais être Père Noël comme ça, je ne travaillerais qu’une fois par an, répond Toto."
-ENFANT_2,"Qu'est-ce qui est jaune et qui attend ?
-Jonathan !","Qu'est-ce qui est jaune et qui attend ?
+ENFANT_2,"Teacher: ""Does anybody know what we call a person who keeps talking when nobody else is interested?""
+Little Johnny: ""A teacher miss.""","Qu'est-ce qui est jaune et qui attend ?
 Jonathan !"
-ENFANT_3,"C’est l’anniversaire du père de Toto. Il demande à Toto :
-- Ce qui me ferait le plus plaisir pour mon anniversaire, c’est que tu travailles bien à l’école !
-- Trop tard, je t’ai déjà acheté une cravate !","C’est l’anniversaire du père de Toto. Il demande à Toto :
+ENFANT_3,"Teacher: ""Little Johnny, how do you spell ""elephant""?""
+Little Johnny: ""E-L-E-F-A-N-T""
+Teacher: ""No Johnny, that in incorrect.""
+Johnny: ""Maybe it is wrong Miss but you asked how I spell it.""","C’est l’anniversaire du père de Toto. Il demande à Toto :
 - Ce qui me ferait le plus plaisir pour mon anniversaire, c’est que tu travailles bien à l’école !
 - Trop tard, je t’ai déjà acheté une cravate !"
-ENFANT_4,"La maîtresse demande à Toto :
-- Toto, 5 et 5, ça fait quoi ?
-- Match nul !","La maîtresse demande à Toto :
+ENFANT_4,"Johnny: ""Dad, have you ever been to Egypt?""
+Dad: ""No son, why do you ask?""
+Johnny: ""Well where did you find our mummy?""","La maîtresse demande à Toto :
 - Toto, 5 et 5, ça fait quoi ?
 - Match nul !"
-ENFANT_5,"- Toto ! Le perroquet a disparu ! Tu n’as rien remarqué d’anormal en mon absence ?
-- Non, rien... À part le chat qui s’est mis à parler.","- Toto ! Le perroquet a disparu ! Tu n’as rien remarqué d’anormal en mon absence ?
+ENFANT_5,"Teacher: ""Little Johnny, you are late to class again.""
+Johnny: ""But miss, you said that it is never too late to learn.""","- Toto ! Le perroquet a disparu ! Tu n’as rien remarqué d’anormal en mon absence ?
 - Non, rien... À part le chat qui s’est mis à parler."
-ENFANT_6,"Toto demande à sa mère :
-- Nos voisins sont-ils pauvres ?
-- Non, pourquoi ?
-- Parce qu’ils font toute une histoire parce que leur fils a avalé une pièce d’un centime.","Toto demande à sa mère :
+ENFANT_6,"Little Johnny gets back from school and his dad says to him ""Johnny, where is your report card?""
+Johnny replies ""sorry dad, I don't have it"". His father is furious and says ""why not?""
+Johnny replies ""I lent it to my friend, he wanted to scare his parents.""","Toto demande à sa mère :
 - Nos voisins sont-ils pauvres ?
 - Non, pourquoi ?
 - Parce qu’ils font toute une histoire parce que leur fils a avalé une pièce d’un centime."
-ENFANT_7,"En colonie de vacances, le moniteur demande à Toto :
-- Dis-moi, tu as pris une douche ce matin ?
-- Pourquoi ? Il en manque une ?","En colonie de vacances, le moniteur demande à Toto :
+ENFANT_7,"Little Johnny asks the teacher, “Can I be punished for something I haven’t done?”
+The teacher is shocked. “Of course not, Johnny! That would be very unfair!”
+Johnny is relieved. “That’s good to know,” he says, “Because I haven’t done my homework.”","En colonie de vacances, le moniteur demande à Toto :
 - Dis-moi, tu as pris une douche ce matin ?
 - Pourquoi ? Il en manque une ?"
-ENFANT_8,"En classe, le prof interroge Toto :
-- Donne-moi le nom d’un liquide qui ne gèle pas.
-- L’eau chaude, monsieur !","En classe, le prof interroge Toto :
+ENFANT_8,"Little Johnny comes home and tells his daddy, “Dad, tomorrow there’s a special ‘Adults’ evening’ at school.”
+Daddy is surprised, “Really? Special?”
+“Yes,” nods Johnny, “it will be just you, the teacher, the headmaster, and two police officers.”","En classe, le prof interroge Toto :
 - Donne-moi le nom d’un liquide qui ne gèle pas.
 - L’eau chaude, monsieur !"
-ENFANT_9,"C’est la maîtresse qui demande à Toto : 
-- Cite-moi un mammifère qui n’a pas de dents 
-- Ma grand-mère ?","C’est la maîtresse qui demande à Toto : 
+ENFANT_9,"Teacher: “It’s the fourth time you’re late for school this week Johnny! Do you know what that means?!”
+Little Johnny: “That it’s Thursday, Miss Bramwell.”","C’est la maîtresse qui demande à Toto : 
 - Cite-moi un mammifère qui n’a pas de dents 
 - Ma grand-mère ?"
-ENFANT_10,"C’est l’histoire de la mère de Toto qui lui dit :
-- Tu veux bien m’aider à changer ton petit frère ?
-- Pourquoi, il est déjà usé ?","C’est l’histoire de la mère de Toto qui lui dit :
+ENFANT_10,"Teacher: “How much is half of 8?”
+Little Johnny: “Up and down or across?”
+Teacher: “What do you mean?”
+Little Johnny: “Well, up and down makes a 3, or across the middle leaves a 0!”","C’est l’histoire de la mère de Toto qui lui dit :
 - Tu veux bien m’aider à changer ton petit frère ?
 - Pourquoi, il est déjà usé ?"
-ENFANT_11,"C’est l’histoire de Toto qui annonce fièrement à son père : 
-- J’ai terminé ce puzzle en une heure, alors que sur la boîte il y a marqué de 2 à 4 ans !","C’est l’histoire de Toto qui annonce fièrement à son père : 
+ENFANT_11,"Teacher: “If 1 + 1 = 2 and 2 + 2 = 4, what is 4 + 4?”
+Little Johnny: “That’s not fair, you answer the easy ones and leave us with the hard one!”","C’est l’histoire de Toto qui annonce fièrement à son père : 
 - J’ai terminé ce puzzle en une heure, alors que sur la boîte il y a marqué de 2 à 4 ans !"
-ENFANT_12,"C’est l’histoire de Toto qui rentre à la maison après sa première journée à l’école. Sa maman lui dit :
-- Alors Toto, tu as appris beaucoup de choses aujourd’hui ? 
-- Pas assez en tout cas, ils veulent que j’y retourne demain.","C’est l’histoire de Toto qui rentre à la maison après sa première journée à l’école. Sa maman lui dit :
+ENFANT_12,"Mother: “Johnny, if you keep being this naughty, you’ll get kids who will be very naughty to you!”
+Little Johnny: “Oh mom, you just betrayed yourself there, didn’t you?”","C’est l’histoire de Toto qui rentre à la maison après sa première journée à l’école. Sa maman lui dit :
 - Alors Toto, tu as appris beaucoup de choses aujourd’hui ? 
 - Pas assez en tout cas, ils veulent que j’y retourne demain."
-ENFANT_13,"Toto raconte à un copain :
-- Mon prof est bizarre. L’autre jour, alors que je bavardais avec ma voisine, il a dit : « séparez-vous ou je vous colle »","Toto raconte à un copain :
+ENFANT_13,"Little Johnny: “Teacher, can I go to the bathroom?” 
+Teacher: “Little Johnny, may I go to the bathroom?” 
+Little Johnny: “But I asked first!”","Toto raconte à un copain :
 - Mon prof est bizarre. L’autre jour, alors que je bavardais avec ma voisine, il a dit : « séparez-vous ou je vous colle »"
-ENFANT_14,"La maîtresse dit à Toto :
-- Tu es épicier. J’entre dans ton magasin et je choisis une salade à 1 euro, un kilo de carottes à 3 euros et trois litres de jus d’oranges à 4,50 euros. Combien je te dois ?
-Toto réfléchit un moment et se met dans la peau de l’épicier,
-- Ne vous en faites pas ma p’tite dame, vous me réglerez votre note demain !","La maîtresse dit à Toto :
+ENFANT_14,"English teacher asks the class: “Which tense is the sentence ‘I AM BEAUTIFUL’?”
+Little Johnny replies, “Clearly, past tense.”","La maîtresse dit à Toto :
 - Tu es épicier. J’entre dans ton magasin et je choisis une salade à 1 euro, un kilo de carottes à 3 euros et trois litres de jus d’oranges à 4,50 euros. Combien je te dois ?
 Toto réfléchit un moment et se met dans la peau de l’épicier,
 - Ne vous en faites pas ma p’tite dame, vous me réglerez votre note demain !"
-ENFANT_15,"La maîtresse sermonne Toto :
-- Tu n’as toujours pas revu le cours de géographie !
-- Si, mais à force de me creuser la tête, j’ai un trou de mémoire !","La maîtresse sermonne Toto :
+ENFANT_15,"Teacher: “Where’s the English Channel?”
+Little Johnny: “I don’t know. My television doesn’t pick it up.”","La maîtresse sermonne Toto :
 - Tu n’as toujours pas revu le cours de géographie !
 - Si, mais à force de me creuser la tête, j’ai un trou de mémoire !"
-JOGGER_0,"Trouve cette contrepèterie :
-Goûtez-moi cette farce !","Trouve cette contrepèterie :
+JOGGER_0,"Find that spoonerism :
+Take a shit","Trouve cette contrepèterie :
 Goûtez-moi cette farce !"
 JOGGER_1,"Find that spoonerism :
 Three cheers for our deer old queen !","Trouve cette contrepèterie :
